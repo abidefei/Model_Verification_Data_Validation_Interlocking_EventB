@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="axm4/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRACK,{DG_1_3},{IG},{IIG},{IIIG},{DG_2_4}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE1={1,2,3}" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p3,p1,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DG_1_3" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="DG_2_4" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="ROUTE1" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum1" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬IIG=DG_2_4"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬IG=IIG"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬DG_1_3=IIG"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬IIG=IIIG"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬DG_1_3=IIIG"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="{1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}∈{1,2,3} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="ROUTE1={1,2,3}"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬DG_1_3=DG_2_4"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬IG=IIIG"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬IG=DG_2_4"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬DG_1_3=IG"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬IIIG=DG_2_4"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(TRACK,{DG_1_3},{IG},{IIG},{IIIG},{DG_2_4})"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="routeTrackNum1∈ROUTE1 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="TRACK={DG_1_3,IG,IIG,IIIG,DG_2_4}"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="routeTrackNum1∈{1,2,3} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm7/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRACK,{DG_1_3},{IG},{IIG},{IIIG},{DG_2_4}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE1={1,2,3}" org.eventb.core.prHyps="p6">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p18"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE2={4,5,6}" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p18" org.eventb.core.prInfHyps="p20"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prGoal="p19" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="p6,p1,p2,p3,p5,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p20">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DG_1_3" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="DG_2_4" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="ROUTE1" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="ROUTE2" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum1" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum2" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬IIG=DG_2_4"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬IG=IIG"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬DG_1_3=IIG"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="routeTrackNum2∈{4,5,6} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬IIG=IIIG"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬DG_1_3=IIIG"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="{1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}∈{1,2,3} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ROUTE1={1,2,3}"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="ROUTE2={4,5,6}"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬DG_1_3=DG_2_4"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬IG=IIIG"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬IG=DG_2_4"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="{4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}∈{4,5,6} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="routeTrackNum2∈ROUTE2 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬DG_1_3=IG"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬IIIG=DG_2_4"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(TRACK,{DG_1_3},{IG},{IIG},{IIIG},{DG_2_4})"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="routeTrackNum1∈ROUTE1 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="TRACK={DG_1_3,IG,IIG,IIIG,DG_2_4}"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="routeTrackNum1∈{1,2,3} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm10/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="TRACK">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRACK,{DG_1_3},{IG},{IIG},{IIIG},{DG_2_4}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE1={1,2,3}" org.eventb.core.prHyps="p9">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p21"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p21" org.eventb.core.prInfHyps="p22"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p21"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE2={4,5,6}" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p4" org.eventb.core.prInfHyps="p23"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prHyps="p5">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p23" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p23"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE3={7,8,9}" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p25">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum3={7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}" org.eventb.core.prGoal="p25" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p26">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p26" org.eventb.core.prHyps="p9,p3,p7,p1,p5,p4,p8,p2,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DG_1_3" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="DG_2_4" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="ROUTE1" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="ROUTE2" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="ROUTE3" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum1" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum2" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum3" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬IG=IIG"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="routeTrackNum2∈{4,5,6} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="routeTrackNum3={7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="ROUTE3={7,8,9}"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DG_1_3=DG_2_4"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬IG=DG_2_4"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="routeTrackNum2∈ROUTE2 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬DG_1_3=IG"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬IIIG=DG_2_4"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="routeTrackNum1∈ROUTE1 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="routeTrackNum1∈{1,2,3} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬IIG=DG_2_4"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DG_1_3=IIG"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬IIG=IIIG"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="routeTrackNum3∈ROUTE3 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DG_1_3=IIIG"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="{7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}∈{7,8,9} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="{1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}∈{1,2,3} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="ROUTE1={1,2,3}"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="ROUTE2={4,5,6}"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬IG=IIIG"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="{4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}∈{4,5,6} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="routeTrackNum3∈{7,8,9} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(TRACK,{DG_1_3},{IG},{IIG},{IIIG},{DG_2_4})"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="TRACK={DG_1_3,IG,IIG,IIIG,DG_2_4}"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm13/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="TRACK" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p4,p1,p5,p6,p7,p2,p8,p9,p3,p10,p11,p12"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p2,p3"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum4={10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE4={10,11,12}" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p1,p2,p3">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DG_1_3" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="DG_2_4" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="ROUTE4" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum4" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="routeTrackNum4={10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="routeTrackNum3={7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}">
+<org.eventb.core.prIdent name="routeTrackNum3" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}">
+<org.eventb.core.prIdent name="routeTrackNum2" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="ROUTE4={10,11,12}"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="routeTrackNum3∈ROUTE3 → (TRACK ⤔ ℤ)">
+<org.eventb.core.prIdent name="ROUTE3" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum3" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="ROUTE3={7,8,9}">
+<org.eventb.core.prIdent name="ROUTE3" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="ROUTE1={1,2,3}">
+<org.eventb.core.prIdent name="ROUTE1" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="{10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}∈{10,11,12} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ROUTE2={4,5,6}">
+<org.eventb.core.prIdent name="ROUTE2" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="{10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}∈ROUTE4 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}">
+<org.eventb.core.prIdent name="routeTrackNum1" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="routeTrackNum2∈ROUTE2 → (TRACK ⤔ ℤ)">
+<org.eventb.core.prIdent name="ROUTE2" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum2" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(TRACK,{DG_1_3},{IG},{IIG},{IIIG},{DG_2_4})"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="routeTrackNum1∈ROUTE1 → (TRACK ⤔ ℤ)">
+<org.eventb.core.prIdent name="ROUTE1" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum1" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="routeTrackNum4∈ROUTE4 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm15/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.prSets="TRACK" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRACK,{DG_1_3},{IG},{IIG},{IIIG},{DG_2_4}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p26">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE1={1,2,3}" org.eventb.core.prHyps="p7">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prGoal="p26" org.eventb.core.prHyps="p10">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p30">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p27" org.eventb.core.prInfHyps="p29"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p9,p27"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p30" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE2={4,5,6}" org.eventb.core.prHyps="p8">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p28" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p32" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p28,p32"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p35" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p36">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE3={7,8,9}" org.eventb.core.prHyps="p6">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum3={7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p33" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p37" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p33,p37"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE4={10,11,12}" org.eventb.core.prHyps="p4">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum4={10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p38" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p40" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p38,p40"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p36" org.eventb.core.prHyps="p17,p32,p28,p2,p4,p41,p6,p15,p9,p20,p10,p11,p21,p23,p13,p27,p16,p19,p1,p22,p3,p5,p24,p39,p29,p7,p42,p8,p18,p33,p40,p34,p37,p38,p14,p25">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p43">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE1={1,2,3}" org.eventb.core.prHyps="p7">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prGoal="p43" org.eventb.core.prHyps="p10">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p44">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p27" org.eventb.core.prInfHyps="p29"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p9,p27"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p44" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p45">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE2={4,5,6}" org.eventb.core.prHyps="p8">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p28" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p32" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p28,p32"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE3={7,8,9}" org.eventb.core.prHyps="p6">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum3={7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}" org.eventb.core.prGoal="p45" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p46">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p33" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p37" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p33,p37"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p46" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p47">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE4={10,11,12}" org.eventb.core.prHyps="p4">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum4={10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p38" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p40" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p38,p40"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p47" org.eventb.core.prHyps="p17,p32,p28,p2,p4,p41,p6,p15,p9,p20,p10,p11,p21,p23,p13,p27,p16,p19,p1,p22,p3,p5,p24,p39,p29,p7,p42,p8,p18,p33,p40,p34,p37,p38,p14,p25">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name=")" org.eventb.core.prGoal="p48">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE1={1,2,3}" org.eventb.core.prHyps="p7">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prGoal="p48" org.eventb.core.prHyps="p10">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p49">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p27" org.eventb.core.prInfHyps="p29"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p9,p27"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p49" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p50">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE2={4,5,6}" org.eventb.core.prHyps="p8">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p28" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p32" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p28,p32"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE3={7,8,9}" org.eventb.core.prHyps="p6">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum3={7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p33" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p37" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p33,p37"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE4={10,11,12}" org.eventb.core.prHyps="p4">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum4={10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}" org.eventb.core.prGoal="p50" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p51">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p38" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p40" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p38,p40"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p51" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p52">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p52" org.eventb.core.prHyps="p17,p32,p28,p2,p4,p41,p6,p15,p9,p20,p10,p11,p21,p23,p13,p27,p16,p19,p1,p22,p3,p5,p24,p39,p29,p7,p42,p8,p18,p33,p40,p34,p37,p38,p14,p25">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="*" org.eventb.core.prGoal="p53">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE1={1,2,3}" org.eventb.core.prHyps="p7">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prHyps="p10">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p27" org.eventb.core.prInfHyps="p29"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p9,p27"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE2={4,5,6}" org.eventb.core.prHyps="p8">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prGoal="p53" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p54">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p28" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p32" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p28,p32"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p54" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p55">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE3={7,8,9}" org.eventb.core.prHyps="p6">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum3={7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}" org.eventb.core.prGoal="p55" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p56">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p33" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p37" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p33,p37"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p56" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p57">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE4={10,11,12}" org.eventb.core.prHyps="p4">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum4={10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p38" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p40" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p38,p40"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p57" org.eventb.core.prHyps="p17,p32,p28,p2,p4,p41,p6,p15,p9,p20,p10,p11,p21,p23,p13,p27,p16,p19,p1,p22,p3,p5,p24,p39,p29,p7,p42,p8,p18,p33,p40,p34,p37,p38,p14,p25">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="+" org.eventb.core.prGoal="p58">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE1={1,2,3}" org.eventb.core.prHyps="p7">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p13" org.eventb.core.prInfHyps="p27"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prHyps="p10">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p27" org.eventb.core.prInfHyps="p29"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p9,p27"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE2={4,5,6}" org.eventb.core.prHyps="p8">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p32"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p28" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p32" org.eventb.core.prInfHyps="p34"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p28,p32"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE3={7,8,9}" org.eventb.core.prHyps="p6">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p5" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum3={7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}" org.eventb.core.prGoal="p58" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p59">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p33" org.eventb.core.prInfHyps="p38"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p37" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p33,p37"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p59" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p60">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE4={10,11,12}" org.eventb.core.prHyps="p4">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p14" org.eventb.core.prInfHyps="p40"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum4={10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}" org.eventb.core.prGoal="p60" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p61">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p38" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="FORWARD_INF1" org.eventb.core.prHyps="p40" org.eventb.core.prInfHyps="p42"/>
+<org.eventb.core.prHypAction name="DESELECT2" org.eventb.core.prHyps="p38,p40"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p61" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p62">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p62" org.eventb.core.prHyps="p7,p10,p8,p3,p6,p2,p4,p1,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p29,p34,p39,p41,p42">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DG_1_3" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="DG_2_4" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="ROUTE1" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="ROUTE2" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="ROUTE3" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="ROUTE4" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum1" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum2" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum3" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum4" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬IG=IIG"/>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="routeTrackNum2∈{4,5,6} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="{4,5,6}∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="dom(routeTrackNum2)∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ROUTE3={7,8,9}"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DG_1_3=DG_2_4"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DG_1_3=IG"/>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="{1,2,3}∩{4,5,6}=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DG_1_3=IIG"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="routeTrackNum4={10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}"/>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="{1,2,3}∩dom({7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}})=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}"/>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="{7,8,9}∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="routeTrackNum3∈ROUTE3 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="{1,2,3}∩dom(routeTrackNum2)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="ROUTE1={1,2,3}"/>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="{1,2,3}∩dom({4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}})=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="routeTrackNum={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}∪{4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}∪routeTrackNum3∪routeTrackNum4"/>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="{4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}∈{4,5,6} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="{1,2,3}∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(TRACK,{DG_1_3},{IG},{IIG},{IIIG},{DG_2_4})"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="routeTrackNum4∈ROUTE4 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(routeTrackNum1)∩dom(routeTrackNum2)=(∅ ⦂ ℙ(ℤ))∧dom(routeTrackNum1)∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))∧dom(routeTrackNum1)∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))∧dom(routeTrackNum2)∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))∧dom(routeTrackNum3)∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="routeTrackNum={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}∪routeTrackNum2∪routeTrackNum3∪routeTrackNum4"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="routeTrackNum3={7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ROUTE4={10,11,12}"/>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="routeTrackNum={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}∪{4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}∪{7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}∪{10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}"/>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="{4,5,6}∩dom({7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}})=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="{7,8,9}∩dom({10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}})=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="{1,2,3}∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="{1,2,3}∩{10,11,12}=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="routeTrackNum=routeTrackNum1∪routeTrackNum2∪routeTrackNum3∪routeTrackNum4"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬IG=DG_2_4"/>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="dom({1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}})∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="routeTrackNum2∈ROUTE2 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬IIIG=DG_2_4"/>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="dom(routeTrackNum1)∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="routeTrackNum1∈ROUTE1 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="{1,2,3}∩dom({10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}})=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="{7,8,9}∩{10,11,12}=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="dom({4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}})∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="routeTrackNum1∈{1,2,3} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬IIG=DG_2_4"/>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="dom({1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}})∩dom(routeTrackNum2)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬IIG=IIIG"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DG_1_3=IIIG"/>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="{7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}∈{7,8,9} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="dom({7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}})∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="{1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}∈{1,2,3} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="{10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}∈{10,11,12} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="ROUTE2={4,5,6}"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="dom(routeTrackNum1)∩dom(routeTrackNum2)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬IG=IIIG"/>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="routeTrackNum4∈{10,11,12} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="dom(routeTrackNum1)∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="routeTrackNum3∈{7,8,9} → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="dom(routeTrackNum3)∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="dom({1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}})∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="{1,2,3}∩{7,8,9}=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="routeTrackNum={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}∪{4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}∪{7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}∪routeTrackNum4"/>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="{4,5,6}∩{7,8,9}=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="TRACK={DG_1_3,IG,IIG,IIIG,DG_2_4}"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm16/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16" org.eventb.core.prSets="TRACK" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="DESELECT0" org.eventb.core.prHyps="p10,p2,p13,p3,p14,p4,p6,p8,p9"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17,p18,p19,p20,p21"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with routeTrackNum=routeTrackNum1∪routeTrackNum2∪routeTrackNum3∪routeTrackNum4" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p11">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p22">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with ROUTE=ROUTE1∪ROUTE2∪ROUTE3∪ROUTE4" org.eventb.core.prGoal="p22" org.eventb.core.prHyps="p7">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p23">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p14,p9,p13,p10,p4,p8,p3,p6,p2"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p23" org.eventb.core.prHyps="p15,p12,p5,p16,p11,p7,p17,p18,p19,p20,p21,p14,p9,p13,p10,p4,p8,p3,p6,p2">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="DG_1_3" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="DG_2_4" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="IIIG" org.eventb.core.type="TRACK"/>
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="ROUTE1" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="ROUTE2" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="ROUTE3" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="ROUTE4" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum1" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum2" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum3" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prIdent name="routeTrackNum4" org.eventb.core.type="ℙ(ℤ×ℙ(TRACK×ℤ))"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(routeTrackNum1)∩dom(routeTrackNum2)=(∅ ⦂ ℙ(ℤ))∧dom(routeTrackNum1)∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))∧dom(routeTrackNum1)∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))∧dom(routeTrackNum2)∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))∧dom(routeTrackNum3)∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="routeTrackNum1∪routeTrackNum2∪routeTrackNum3∪routeTrackNum4∈ROUTE → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="dom(routeTrackNum2)∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="routeTrackNum4={10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="routeTrackNum3={7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1}}"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="routeTrackNum2={4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2}}"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="routeTrackNum3∈ROUTE3 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ROUTE4={10,11,12}"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="ROUTE=ROUTE1∪ROUTE2∪ROUTE3∪ROUTE4"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="ROUTE3={7,8,9}"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="ROUTE1={1,2,3}"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="ROUTE2={4,5,6}"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="dom(routeTrackNum1)∩dom(routeTrackNum2)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="routeTrackNum=routeTrackNum1∪routeTrackNum2∪routeTrackNum3∪routeTrackNum4"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="dom(routeTrackNum1)∩dom(routeTrackNum3)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="routeTrackNum1∪routeTrackNum2∪routeTrackNum3∪routeTrackNum4∈ROUTE1∪ROUTE2∪ROUTE3∪ROUTE4 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="routeTrackNum∈ROUTE → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="routeTrackNum2∈ROUTE2 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="routeTrackNum1={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2}}"/>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="dom(routeTrackNum3)∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="partition(TRACK,{DG_1_3},{IG},{IIG},{IIIG},{DG_2_4})"/>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="dom(routeTrackNum1)∩dom(routeTrackNum4)=(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="routeTrackNum1∈ROUTE1 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="routeTrackNum4∈ROUTE4 → (TRACK ⤔ ℤ)"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

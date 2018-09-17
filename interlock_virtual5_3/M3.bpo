@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="SECTION" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.poIdentifier name="DG_1_3" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="DG_2_4" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="IG" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="IIG" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="IIIG" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="Q_1" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="Q_2" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="ROUTE" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.poIdentifier name="routeTrack" org.eventb.core.type="ℙ(SECTION×ℤ)"/>
+<org.eventb.core.poPredicate name="routeTracl" org.eventb.core.predicate="ROUTE=1 ‥ 12" org.eventb.core.source="/interlock_virtual5_3/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="routeTracm" org.eventb.core.predicate="partition(SECTION,{Q_1},{Q_2},{IG},{IIG},{IIIG},{DG_1_3},{DG_2_4})" org.eventb.core.source="/interlock_virtual5_3/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#@"/>
+<org.eventb.core.poPredicate name="routeTracn" org.eventb.core.predicate="TRACK={IG,IIG,IIIG,DG_1_3,DG_2_4}" org.eventb.core.source="/interlock_virtual5_3/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="routeTraco" org.eventb.core.predicate="routeTrack={DG_1_3 ↦ 1,IG ↦ 1,DG_1_3 ↦ 2,IIG ↦ 2,DG_1_3 ↦ 3,IIIG ↦ 3,DG_2_4 ↦ 4,IG ↦ 4,DG_2_4 ↦ 5,IIG ↦ 5,DG_2_4 ↦ 6,IIIG ↦ 6,DG_1_3 ↦ 7,DG_1_3 ↦ 8,DG_1_3 ↦ 9,DG_2_4 ↦ 10,DG_2_4 ↦ 11,DG_2_4 ↦ 12}" org.eventb.core.source="/interlock_virtual5_3/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#0"/>
+<org.eventb.core.poIdentifier name="TRAIN" org.eventb.core.type="ℙ(TRAIN)"/>
+<org.eventb.core.poIdentifier name="EXTRA_TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.poIdentifier name="approachSection" org.eventb.core.type="ℙ(ℤ×SECTION)"/>
+<org.eventb.core.poIdentifier name="conflictRoute" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="routeTrackCount" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="routeTrackNum" org.eventb.core.type="ℙ(ℤ×ℙ(SECTION×ℤ))"/>
+<org.eventb.core.poPredicate name="routeTrackCounu" org.eventb.core.predicate="conflictRoute={1 ↦ 7,2 ↦ 8,3 ↦ 9,4 ↦ 10,5 ↦ 11,6 ↦ 12,7 ↦ 1,8 ↦ 2,9 ↦ 3,10 ↦ 4,11 ↦ 5,12 ↦ 6}" org.eventb.core.source="/interlock_virtual5_3/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#axm14"/>
+<org.eventb.core.poPredicate name="routeTrackCounv" org.eventb.core.predicate="EXTRA_TRACK={Q_1,Q_2}" org.eventb.core.source="/interlock_virtual5_3/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#axm15"/>
+<org.eventb.core.poPredicate name="routeTrackCounw" org.eventb.core.predicate="routeTrackNum={1 ↦ {DG_1_3 ↦ 1,IG ↦ 2},2 ↦ {DG_1_3 ↦ 1,IIG ↦ 2},3 ↦ {DG_1_3 ↦ 1,IIIG ↦ 2},4 ↦ {DG_2_4 ↦ 1,IG ↦ 2},5 ↦ {DG_2_4 ↦ 1,IIG ↦ 2},6 ↦ {DG_2_4 ↦ 1,IIIG ↦ 2},7 ↦ {DG_1_3 ↦ 1},8 ↦ {DG_1_3 ↦ 1},9 ↦ {DG_1_3 ↦ 1},10 ↦ {DG_2_4 ↦ 1},11 ↦ {DG_2_4 ↦ 1},12 ↦ {DG_2_4 ↦ 1}}" org.eventb.core.source="/interlock_virtual5_3/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#axm16"/>
+<org.eventb.core.poPredicate name="routeTrackCounx" org.eventb.core.predicate="routeTrackCount={1 ↦ 2,2 ↦ 2,3 ↦ 2,4 ↦ 2,5 ↦ 2,6 ↦ 2,7 ↦ 1,8 ↦ 1,9 ↦ 1,10 ↦ 1,11 ↦ 1,12 ↦ 1}" org.eventb.core.source="/interlock_virtual5_3/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#axm17"/>
+<org.eventb.core.poPredicate name="routeTrackCouny" org.eventb.core.predicate="approachSection={1 ↦ Q_1,2 ↦ Q_1,3 ↦ Q_1,4 ↦ Q_2,5 ↦ Q_2,6 ↦ Q_2,7 ↦ IG,8 ↦ IIG,9 ↦ IIIG,10 ↦ IG,11 ↦ IIG,12 ↦ IIIG}" org.eventb.core.source="/interlock_virtual5_3/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.axiom#axm18"/>
+<org.eventb.core.poIdentifier name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.poIdentifier name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+<org.eventb.core.poIdentifier name="TRACK_TYPE" org.eventb.core.type="ℙ(TRACK_TYPE)"/>
+<org.eventb.core.poIdentifier name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.poIdentifier name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.poIdentifier name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.poIdentifier name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.poIdentifier name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.poIdentifier name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.poIdentifier name="WC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.poIdentifier name="ZN" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.poIdentifier name="route_FangX" org.eventb.core.type="ℙ(ℤ×ROUTE_FX)"/>
+<org.eventb.core.poIdentifier name="route_type" org.eventb.core.type="ℙ(ℤ×ROUTE_TYPE)"/>
+<org.eventb.core.poIdentifier name="section_CZ" org.eventb.core.type="ℙ(ℤ×SECTION)"/>
+<org.eventb.core.poIdentifier name="track_type" org.eventb.core.type="ℙ(SECTION×TRACK_TYPE)"/>
+<org.eventb.core.poPredicate name="routeTrackCounz" org.eventb.core.predicate="partition(ROUTE_TYPE,{D},{L})" org.eventb.core.source="/interlock_virtual5_3/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#+"/>
+<org.eventb.core.poPredicate name="routeTrackCoun{" org.eventb.core.predicate="partition(ROUTE_FX,{JZ},{CZ},{ZN})" org.eventb.core.source="/interlock_virtual5_3/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="routeTrackCoun|" org.eventb.core.predicate="partition(TRACK_TYPE,{DC},{WC},{GD})" org.eventb.core.source="/interlock_virtual5_3/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="routeTrackCoun}" org.eventb.core.predicate="route_type={1 ↦ L,2 ↦ L,3 ↦ L,4 ↦ L,5 ↦ L,6 ↦ L,7 ↦ L,8 ↦ L,9 ↦ L,10 ↦ L,11 ↦ L,12 ↦ L}" org.eventb.core.source="/interlock_virtual5_3/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#I"/>
+<org.eventb.core.poPredicate name="routeTrackCoun~" org.eventb.core.predicate="route_FangX={1 ↦ JZ,2 ↦ JZ,3 ↦ JZ,4 ↦ JZ,5 ↦ JZ,6 ↦ JZ,7 ↦ CZ,8 ↦ CZ,9 ↦ CZ,10 ↦ CZ,11 ↦ CZ,12 ↦ CZ}" org.eventb.core.source="/interlock_virtual5_3/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#J"/>
+<org.eventb.core.poPredicate name="routeTrackCouo'" org.eventb.core.predicate="section_CZ={7 ↦ Q_1,8 ↦ Q_1,9 ↦ Q_1,10 ↦ Q_2,11 ↦ Q_2,12 ↦ Q_2}" org.eventb.core.source="/interlock_virtual5_3/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#K"/>
+<org.eventb.core.poPredicate name="routeTrackCouo(" org.eventb.core.predicate="track_type={DG_1_3 ↦ DC,DG_2_4 ↦ DC,IG ↦ GD,IIG ↦ GD,IIIG ↦ GD}" org.eventb.core.source="/interlock_virtual5_3/C2.buc|org.eventb.core.contextFile#C2|org.eventb.core.axiom#L"/>
+<org.eventb.core.poIdentifier name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.poIdentifier name="DC_1" org.eventb.core.type="SWITCH"/>
+<org.eventb.core.poIdentifier name="DC_2" org.eventb.core.type="SWITCH"/>
+<org.eventb.core.poIdentifier name="DC_3" org.eventb.core.type="SWITCH"/>
+<org.eventb.core.poIdentifier name="DC_4" org.eventb.core.type="SWITCH"/>
+<org.eventb.core.poIdentifier name="doubleSwitch" org.eventb.core.type="ℙ(SWITCH×SWITCH)"/>
+<org.eventb.core.poIdentifier name="routeSwitch" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+<org.eventb.core.poPredicate name="routeTrackCouo)" org.eventb.core.predicate="partition(SWITCH,{DC_1},{DC_2},{DC_3},{DC_4})" org.eventb.core.source="/interlock_virtual5_3/C3.buc|org.eventb.core.contextFile#C3|org.eventb.core.axiom#F"/>
+<org.eventb.core.poPredicate name="routeTrackCouo*" org.eventb.core.predicate="trackSwitch={DC_1 ↦ DG_1_3,DC_3 ↦ DG_1_3,DC_2 ↦ DG_2_4,DC_4 ↦ DG_2_4}" org.eventb.core.source="/interlock_virtual5_3/C3.buc|org.eventb.core.contextFile#C3|org.eventb.core.axiom#&gt;"/>
+<org.eventb.core.poPredicate name="routeTrackCouo+" org.eventb.core.predicate="doubleSwitch∈SWITCH ⤔ SWITCH" org.eventb.core.source="/interlock_virtual5_3/C3.buc|org.eventb.core.contextFile#C3|org.eventb.core.axiom#1"/>
+<org.eventb.core.poPredicate name="routeTrackCouo," org.eventb.core.predicate="doubleSwitch=(∅ ⦂ ℙ(SWITCH×SWITCH))" org.eventb.core.source="/interlock_virtual5_3/C3.buc|org.eventb.core.contextFile#C3|org.eventb.core.axiom#G"/>
+<org.eventb.core.poPredicate name="routeTrackCouo-" org.eventb.core.predicate="routeSwitch={DC_1 ↦ 1,DC_3 ↦ 1,DC_1 ↦ 2,DC_3 ↦ 2,DC_1 ↦ 3,DC_3 ↦ 3,DC_2 ↦ 4,DC_4 ↦ 4,DC_2 ↦ 5,DC_4 ↦ 5,DC_2 ↦ 6,DC_4 ↦ 6,DC_1 ↦ 7,DC_3 ↦ 7,DC_1 ↦ 8,DC_3 ↦ 8,DC_1 ↦ 9,DC_3 ↦ 9,DC_2 ↦ 10,DC_4 ↦ 10,DC_2 ↦ 11,DC_4 ↦ 11,DC_2 ↦ 12,DC_4 ↦ 12}" org.eventb.core.source="/interlock_virtual5_3/C3.buc|org.eventb.core.contextFile#C3|org.eventb.core.axiom#@"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lockedRoute" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch_D" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedTrack" org.eventb.core.type="ℙ(SECTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="train_Pos" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+<org.eventb.core.poIdentifier name="train_type" org.eventb.core.type="ℙ(TRAIN×ROUTE_TYPE)"/>
+<org.eventb.core.poPredicate name="lockedSwitch_E" org.eventb.core.predicate="lockedRoute⊆ROUTE" org.eventb.core.source="/interlock_virtual5_3/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.invariant#+"/>
+<org.eventb.core.poPredicate name="lockedSwitch_F" org.eventb.core.predicate="lockedTrack∈TRACK ⇸ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poPredicate name="lockedSwitch_G" org.eventb.core.predicate="∀r1⦂ℤ,r2⦂ℤ·r1∈lockedRoute∧r2∈lockedRoute∧r1≠r2⇒dom(lockedTrack ▷ {r1})∩dom(lockedTrack ▷ {r2})=(∅ ⦂ ℙ(SECTION))" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#2"/>
+<org.eventb.core.poPredicate name="lockedSwitch_H" org.eventb.core.predicate="∀r⦂ℤ·r∈lockedRoute⇒routeTrack ▷ {r}⊆lockedTrack" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#3"/>
+<org.eventb.core.poPredicate name="lockedSwitch_I" org.eventb.core.predicate="lockedTrack⊆routeTrack" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#7"/>
+<org.eventb.core.poPredicate name="lockedSwitch_J" org.eventb.core.predicate="∀r1⦂ℤ,r2⦂ℤ·r1∈lockedRoute∧r2∈lockedRoute⇒r1 ↦ r2∉conflictRoute" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#8"/>
+<org.eventb.core.poPredicate name="lockedSwitch_K" org.eventb.core.predicate="train_Pos∈TRAIN ⇸ SECTION" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#inv1"/>
+<org.eventb.core.poPredicate name="lockedSwitch_L" org.eventb.core.predicate="∀r⦂ℤ·r∈lockedRoute⇒ran(train_Pos)∩dom(routeTrack ▷ {r})=(∅ ⦂ ℙ(SECTION))" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#var3"/>
+<org.eventb.core.poPredicate name="lockedSwitch_M" org.eventb.core.predicate="∀r⦂ℤ·ran(train_Pos)∩dom(routeTrack ▷ {r})≠(∅ ⦂ ℙ(SECTION))⇒r∉lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#var2"/>
+<org.eventb.core.poPredicate name="lockedSwitch_N" org.eventb.core.predicate="train_type∈dom(train_Pos) → ROUTE_TYPE" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.invariant#var?"/>
+<org.eventb.core.poPredicate name="lockedSwitch_O" org.eventb.core.predicate="∀r1⦂ℤ,r2⦂ℤ·r1∈lockedRoute∧r2∈lockedRoute∧r1≠r2⇒(routeTrackNum(r1))∼(routeTrackCount(r1))≠(routeTrackNum(r2))∼(routeTrackCount(r2))∨track_type((routeTrackNum(r1))∼(routeTrackCount(r1)))=GD" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.invariant#varA"/>
+<org.eventb.core.poPredicate name="lockedSwitch_P" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN·train1∈dom(train_Pos)∧train2∈dom(train_Pos)∧train1≠train2⇒¬(train_Pos(train1)=train_Pos(train2)∧(train_type(train1)=L∨train_type(train2)=L))" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.invariant#varB"/>
+<org.eventb.core.poPredicate name="lockedSwitch_Q" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN·train1∈dom(train_Pos)∧train2∈dom(train_Pos)∧train1≠train2∧train_Pos(train1)=train_Pos(train2)⇒train_type(train1)=D∧train_type(train2)=D" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.invariant#varC"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="inv1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ABSHYP"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track⦂SECTION·track∈TRACK∧train1 ↦ track∈train_Pos∧train2 ↦ track∈train_Pos∧train1≠train2⇒track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ABSHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_E"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track⦂SECTION·track∈TRACK∧train1 ↦ track∈(∅ ⦂ ℙ(TRAIN×SECTION))∧train2 ↦ track∈(∅ ⦂ ℙ(TRAIN×SECTION))∧train1≠train2⇒track_type(track)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var?"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_E"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(SWITCH×ℤ))∈SWITCH ⇸ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var?"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_E"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀track⦂SECTION,r⦂ℤ·r∈ROUTE∧track∈dom(routeTrack ▷ {r})∧track∈ran(trackSwitch)⇒(track ↦ r∈(∅ ⦂ ℙ(SECTION×ℤ))⇒dom(trackSwitch ▷ {track}) × {r}⊆(∅ ⦂ ℙ(SWITCH×ℤ)))" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var?"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_E"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r⦂ℤ·r∈(∅ ⦂ ℙ(ℤ))⇒dom(routeSwitch ▷ {r}) × {r}⊆(∅ ⦂ ℙ(SWITCH×ℤ))" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var?"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_E"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(SWITCH×ℤ))∈SWITCH ↔ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var?"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#INITIALISATION\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_E"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sw⦂SWITCH,r⦂ℤ·sw ↦ r∈(∅ ⦂ ℙ(SWITCH×ℤ))⇒ran({sw} ◁ doubleSwitch) × {r}⊆(∅ ⦂ ℙ(SWITCH×ℤ))" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var?"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#INITIALISATION\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_E" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lockedTrack'" org.eventb.core.type="ℙ(SECTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="train_type'" org.eventb.core.type="ℙ(TRAIN×ROUTE_TYPE)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedRoute'" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch_D'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="train_Pos'" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_E" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_E" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="lock_route/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_F"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch∪(routeSwitch ▷ {r})∈SWITCH ⇸ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#lock_route\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="lock_route/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_F"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀track⦂SECTION,r0⦂ℤ·r0∈ROUTE∧track∈dom(routeTrack ▷ {r0})∧track∈ran(trackSwitch)⇒(track ↦ r0∈lockedTrack∪(routeTrack ▷ {r})⇒dom(trackSwitch ▷ {track}) × {r0}⊆lockedSwitch∪(routeSwitch ▷ {r}))" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#lock_route\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="lock_route/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_F"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r0⦂ℤ·r0∈lockedRoute∪{r}⇒dom(routeSwitch ▷ {r0}) × {r0}⊆lockedSwitch∪(routeSwitch ▷ {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#lock_route\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="lock_route/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_F"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch_D∪(ran(dom(trackSwitch ▷ dom(routeTrack ▷ {r})) ◁ doubleSwitch) × {r})∈SWITCH ↔ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#lock_route\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="lock_route/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_F"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sw⦂SWITCH,r0⦂ℤ·sw ↦ r0∈lockedSwitch∪(routeSwitch ▷ {r})⇒ran({sw} ◁ doubleSwitch) × {r0}⊆lockedSwitch_D∪(ran(dom(trackSwitch ▷ dom(routeTrack ▷ {r})) ◁ doubleSwitch) × {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#lock_route\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_F" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lockedTrack'" org.eventb.core.type="ℙ(SECTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="lockedSwitch'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedRoute'" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch_D'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_F" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_F" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈ROUTE" org.eventb.core.source="/interlock_virtual5_3/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#)|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="r∉lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#,|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="dom(routeTrack ▷ {r})∩dom(lockedTrack)=(∅ ⦂ ℙ(SECTION))" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#,|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="ran({r} ◁ conflictRoute)∩lockedRoute=(∅ ⦂ ℙ(ℤ))" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#,|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="ran(train_Pos)∩dom(routeTrack ▷ {r})=(∅ ⦂ ℙ(SECTION))" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#,|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∀other_r⦂ℤ·other_r∈lockedRoute⇒(routeTrackNum(r))∼(routeTrackCount(r))≠(routeTrackNum(other_r))∼(routeTrackCount(other_r))∨track_type((routeTrackNum(r))∼(routeTrackCount(r)))=GD" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var3|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="dom(lockedSwitch)∩dom(trackSwitch ▷ dom(routeTrack ▷ {r}))=(∅ ⦂ ℙ(SWITCH))" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#var@|org.eventb.core.guard#."/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="signal_reopen/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_G"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r0⦂ℤ·r0∈lockedRoute∪{r}⇒dom(routeSwitch ▷ {r0}) × {r0}⊆lockedSwitch" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#signal_reopen\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_G" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="lockedRoute'" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_G" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_G" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈ROUTE" org.eventb.core.source="/interlock_virtual5_3/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#)|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="routeTrack ▷ {r}⊆lockedTrack" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt7|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀r1⦂ℤ·r1∈lockedRoute⇒r1 ↦ r∉conflictRoute" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt7|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="ran(train_Pos)∩dom(routeTrack ▷ {r})=(∅ ⦂ ℙ(SECTION))" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt7|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀other_r⦂ℤ·other_r∈lockedRoute⇒(routeTrackNum(r))∼(routeTrackCount(r))≠(routeTrackNum(other_r))∼(routeTrackCount(other_r))∨track_type((routeTrackNum(r))∼(routeTrackCount(r)))=GD" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt4|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="dom(routeSwitch ▷ {r}) × {r}⊆lockedSwitch" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#evt1|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="free_route_QX_or_RJ/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_H"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch ⩥ {r}∈SWITCH ⇸ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varA"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#free_route_QX_or_RJ\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="free_route_QX_or_RJ/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_H"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀track⦂SECTION,r0⦂ℤ·r0∈ROUTE∧track∈dom(routeTrack ▷ {r0})∧track∈ran(trackSwitch)⇒(track ↦ r0∈lockedTrack ∖ (routeTrack ▷ {r})⇒dom(trackSwitch ▷ {track}) × {r0}⊆lockedSwitch ⩥ {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varA"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#free_route_QX_or_RJ\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="free_route_QX_or_RJ/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_H"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r0⦂ℤ·r0∈lockedRoute ∖ {r}⇒dom(routeSwitch ▷ {r0}) × {r0}⊆lockedSwitch ⩥ {r}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varA"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#free_route_QX_or_RJ\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="free_route_QX_or_RJ/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_H"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ dom(routeTrack ▷ {r})) ◁ doubleSwitch) × {r})∈SWITCH ↔ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varA"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#free_route_QX_or_RJ\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="free_route_QX_or_RJ/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_H"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sw⦂SWITCH,r0⦂ℤ·sw ↦ r0∈lockedSwitch ⩥ {r}⇒ran({sw} ◁ doubleSwitch) × {r0}⊆lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ dom(routeTrack ▷ {r})) ◁ doubleSwitch) × {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varA"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#free_route_QX_or_RJ\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_H" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="lockedTrack'" org.eventb.core.type="ℙ(SECTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="lockedSwitch'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedRoute'" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch_D'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_H" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_H" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#,|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="fault_route/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_I"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r0⦂ℤ·r0∈lockedRoute ∖ {r}⇒dom(routeSwitch ▷ {r0}) × {r0}⊆lockedSwitch" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varB"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#fault_route\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_I" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="lockedRoute'" org.eventb.core.type="ℙ(ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_I" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_I" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#,|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="free_route_GZ/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_J"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})∈SWITCH ⇸ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varC"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#free_route_GZ\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="free_route_GZ/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_J"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀track0⦂SECTION,r0⦂ℤ·r0∈ROUTE∧track0∈dom(routeTrack ▷ {r0})∧track0∈ran(trackSwitch)⇒(track0 ↦ r0∈lockedTrack ∖ {track ↦ r}⇒dom(trackSwitch ▷ {track0}) × {r0}⊆lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r}))" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varC"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#free_route_GZ\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="free_route_GZ/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_J"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r0⦂ℤ·r0∈lockedRoute⇒dom(routeSwitch ▷ {r0}) × {r0}⊆lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varC"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#free_route_GZ\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="free_route_GZ/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_J"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ {track}) ◁ doubleSwitch) × {r})∈SWITCH ↔ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varC"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#free_route_GZ\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="free_route_GZ/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_J"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sw⦂SWITCH,r0⦂ℤ·sw ↦ r0∈lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})⇒ran({sw} ◁ doubleSwitch) × {r0}⊆lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ {track}) ◁ doubleSwitch) × {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varC"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#free_route_GZ\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_J" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="lockedTrack'" org.eventb.core.type="ℙ(SECTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="lockedSwitch'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch_D'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_J" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_J" org.eventb.core.poStamp="5">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="track∈TRACK∧r∉lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#0|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="track∈dom(routeTrack ▷ {r})∧track ↦ r∈lockedTrack" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var6|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀train⦂TRAIN,t2⦂SECTION·train∈dom(train_Pos)∧t2∈dom(routeTrack ▷ {r})∧routeTrackNum(r)(t2)≤routeTrackNum(r)(track)⇒train ↦ t2∉train_Pos" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var6|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="train_come_D/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_K"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track⦂SECTION·track∈TRACK∧train1 ↦ track∈train_Pos∪{train ↦ e_t}∧train2 ↦ track∈train_Pos∪{train ↦ e_t}∧train1≠train2⇒track_type(track)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var7"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varD"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_come_D\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_K" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="train_type'" org.eventb.core.type="ℙ(TRAIN×ROUTE_TYPE)"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="e_t" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="train_Pos'" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_K" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_K" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train∈TRAIN∧train∉dom(train_Pos)" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt1|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="e_t∈EXTRA_TRACK∧e_t∉ran(train_Pos)" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt1|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="e_t∈ran((dom(route_type ▷ {D})∩dom(route_FangX ▷ {JZ})) ◁ approachSection)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var7|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="train_come_L/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_L"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track⦂SECTION·track∈TRACK∧train1 ↦ track∈train_Pos∪{train ↦ e_t}∧train2 ↦ track∈train_Pos∪{train ↦ e_t}∧train1≠train2⇒track_type(track)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varE"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_come_L\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_L" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="train_type'" org.eventb.core.type="ℙ(TRAIN×ROUTE_TYPE)"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="e_t" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="train_Pos'" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_L" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_L" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train∈TRAIN∧train∉dom(train_Pos)" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt1|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="e_t∈EXTRA_TRACK∧e_t∉ran(train_Pos)" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt1|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="e_t∈ran((dom(route_type ▷ {L})∩dom(route_FangX ▷ {JZ})) ◁ approachSection)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt1|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="train_enter_station/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_M"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track⦂SECTION·track∈TRACK∧train1 ↦ track∈train_Pos{train ↦ (routeTrackNum(r))∼(1)}∧train2 ↦ track∈train_Pos{train ↦ (routeTrackNum(r))∼(1)}∧train1≠train2⇒track_type(track)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var8"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varF"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_enter_station\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_enter_station/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_M"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r0⦂ℤ·r0∈lockedRoute ∖ {r}⇒dom(routeSwitch ▷ {r0}) × {r0}⊆lockedSwitch" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var8"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varF"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_enter_station\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_M" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="lockedRoute'" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="track" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="train_Pos'" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_M" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_M" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#,|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train ↦ track∈train_Pos∧track=approachSection(r)" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt2|org.eventb.core.guard#grd1"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train_type(train)=route_type(r)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var8|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="(routeTrackNum(r))∼(1)∉ran(train_Pos)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var8|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="train_Pos(train)∈EXTRA_TRACK" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var8|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="train_move_D/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_N"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track0⦂SECTION·track0∈TRACK∧train1 ↦ track0∈train_Pos{train ↦ (routeTrackNum(r))∼(routeTrackNum(r)(track)+1)}∧train2 ↦ track0∈train_Pos{train ↦ (routeTrackNum(r))∼(routeTrackNum(r)(track)+1)}∧train1≠train2⇒track_type(track0)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var9"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varG"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_D\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_move_D/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_N"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})∈SWITCH ⇸ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var9"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varG"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_D\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_move_D/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_N"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀track0⦂SECTION,r0⦂ℤ·r0∈ROUTE∧track0∈dom(routeTrack ▷ {r0})∧track0∈ran(trackSwitch)⇒(track0 ↦ r0∈lockedTrack ∖ {track ↦ r}⇒dom(trackSwitch ▷ {track0}) × {r0}⊆lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r}))" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var9"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varG"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_D\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_move_D/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_N"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r0⦂ℤ·r0∈lockedRoute⇒dom(routeSwitch ▷ {r0}) × {r0}⊆lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var9"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varG"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_D\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_move_D/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_N"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ {track}) ◁ doubleSwitch) × {r})∈SWITCH ↔ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var9"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varG"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_D\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_move_D/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_N"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sw⦂SWITCH,r0⦂ℤ·sw ↦ r0∈lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})⇒ran({sw} ◁ doubleSwitch) × {r0}⊆lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ {track}) ◁ doubleSwitch) × {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var9"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varG"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_D\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_N" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lockedTrack'" org.eventb.core.type="ℙ(SECTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="lockedSwitch'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch_D'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="track" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="train_Pos'" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_N" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_N" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="track∈TRACK∧r∈ROUTE∧r∉lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt3|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)∧train ↦ track∈train_Pos" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt3|org.eventb.core.guard#grd1"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="(routeTrackNum(r))∼(routeTrackNum(r)(track)+1) ↦ r∈lockedTrack" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt3|org.eventb.core.guard#element7"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="train_type(train)=route_type(r)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var9|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="train_type(train)=D" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var9|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="(routeTrackNum(r))∼(routeTrackNum(r)(track)+1)∉ran(train_Pos)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var9|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="train_move_L/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_O"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track0⦂SECTION·track0∈TRACK∧train1 ↦ track0∈train_Pos{train ↦ (routeTrackNum(r))∼(routeTrackNum(r)(track)+1)}∧train2 ↦ track0∈train_Pos{train ↦ (routeTrackNum(r))∼(routeTrackNum(r)(track)+1)}∧train1≠train2⇒track_type(track0)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varH"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_L\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_move_L/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_O"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})∈SWITCH ⇸ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varH"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_L\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_move_L/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_O"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀track0⦂SECTION,r0⦂ℤ·r0∈ROUTE∧track0∈dom(routeTrack ▷ {r0})∧track0∈ran(trackSwitch)⇒(track0 ↦ r0∈lockedTrack ∖ {track ↦ r}⇒dom(trackSwitch ▷ {track0}) × {r0}⊆lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r}))" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varH"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_L\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_move_L/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_O"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r0⦂ℤ·r0∈lockedRoute⇒dom(routeSwitch ▷ {r0}) × {r0}⊆lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varH"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_L\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_move_L/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_O"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ {track}) ◁ doubleSwitch) × {r})∈SWITCH ↔ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varH"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_L\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_move_L/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_O"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sw⦂SWITCH,r0⦂ℤ·sw ↦ r0∈lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})⇒ran({sw} ◁ doubleSwitch) × {r0}⊆lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ {track}) ◁ doubleSwitch) × {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varH"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_move_L\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_O" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="lockedTrack'" org.eventb.core.type="ℙ(SECTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="lockedSwitch'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch_D'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="track" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="train_Pos'" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_O" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_O" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="track∈TRACK∧r∈ROUTE∧r∉lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt3|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)∧train ↦ track∈train_Pos" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt3|org.eventb.core.guard#grd1"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="(routeTrackNum(r))∼(routeTrackNum(r)(track)+1) ↦ r∈lockedTrack" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt3|org.eventb.core.guard#element7"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="train_type(train)=route_type(r)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt3|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="train_type(train)=L" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt3|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="(routeTrackNum(r))∼(routeTrackNum(r)(track)+1)∉ran(train_Pos)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt3|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="train_out_route_1/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_P"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track⦂SECTION·track∈TRACK∧train1 ↦ track∈train_Pos{train ↦ (routeTrackNum(r))∼(1)}∧train2 ↦ track∈train_Pos{train ↦ (routeTrackNum(r))∼(1)}∧train1≠train2⇒track_type(track)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varI"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_1\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_out_route_1/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_P"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {old_r})∈SWITCH ⇸ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varI"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_1\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_out_route_1/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_P"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀track0⦂SECTION,r⦂ℤ·r∈ROUTE∧track0∈dom(routeTrack ▷ {r})∧track0∈ran(trackSwitch)⇒(track0 ↦ r∈lockedTrack ∖ {track ↦ old_r}⇒dom(trackSwitch ▷ {track0}) × {r}⊆lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {old_r}))" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varI"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_1\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_out_route_1/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_P"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r0⦂ℤ·r0∈lockedRoute ∖ {r}⇒dom(routeSwitch ▷ {r0}) × {r0}⊆lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {old_r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varI"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_1\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_out_route_1/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_P"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ {track}) ◁ doubleSwitch) × {old_r})∈SWITCH ↔ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varI"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_1\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_out_route_1/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_P"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sw⦂SWITCH,r⦂ℤ·sw ↦ r∈lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {old_r})⇒ran({sw} ◁ doubleSwitch) × {r}⊆lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ {track}) ◁ doubleSwitch) × {old_r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var:"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varI"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_1\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_P" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="old_r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="lockedTrack'" org.eventb.core.type="ℙ(SECTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="lockedSwitch'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedRoute'" org.eventb.core.type="ℙ(ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch_D'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="track" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="train_Pos'" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_P" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_P" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#,|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="track∈TRACK∧old_r∈ROUTE∧old_r∉lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt4|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="train ↦ track∈train_Pos∧track=(routeTrackNum(old_r))∼(routeTrackCount(old_r))" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt4|org.eventb.core.guard#grd1"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="r∈lockedRoute∧approachSection(r)=track" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt4|org.eventb.core.guard#element7"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀r1⦂ℤ·r1≠r∧r1∈lockedRoute⇒(routeTrackNum(r))∼(1)∉dom(routeTrack ▷ {r1})" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt4|org.eventb.core.guard#element8"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="train_type(train)=route_type(old_r)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var:|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="route_type(old_r)=route_type(r)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var:|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="route_FangX(old_r)=ZN∨route_FangX(old_r)=JZ" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var:|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="(routeTrackNum(r))∼(1)∉ran(train_Pos)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var:|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="train_out_route_2/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_Q"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track⦂SECTION·track∈TRACK∧train1 ↦ track∈train_Pos{train ↦ e_t}∧train2 ↦ track∈train_Pos{train ↦ e_t}∧train1≠train2⇒track_type(track)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varJ"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_2\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_out_route_2/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_Q"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})∈SWITCH ⇸ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varJ"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_2\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_out_route_2/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_Q"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀track0⦂SECTION,r0⦂ℤ·r0∈ROUTE∧track0∈dom(routeTrack ▷ {r0})∧track0∈ran(trackSwitch)⇒(track0 ↦ r0∈lockedTrack ∖ {track ↦ r}⇒dom(trackSwitch ▷ {track0}) × {r0}⊆lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r}))" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varJ"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_2\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_out_route_2/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_Q"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r0⦂ℤ·r0∈lockedRoute⇒dom(routeSwitch ▷ {r0}) × {r0}⊆lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varJ"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_2\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_out_route_2/inv10/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_Q"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ {track}) ◁ doubleSwitch) × {r})∈SWITCH ↔ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varJ"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_2\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="train_out_route_2/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_Q"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀sw⦂SWITCH,r0⦂ℤ·sw ↦ r0∈lockedSwitch ∖ (dom(trackSwitch ▷ {track}) × {r})⇒ran({sw} ◁ doubleSwitch) × {r0}⊆lockedSwitch_D ∖ (ran(dom(trackSwitch ▷ {track}) ◁ doubleSwitch) × {r})" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varJ"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_out_route_2\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_Q" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="lockedTrack'" org.eventb.core.type="ℙ(SECTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="e_t" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="lockedSwitch'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="lockedSwitch_D'" org.eventb.core.type="ℙ(SWITCH×ℤ)"/>
+<org.eventb.core.poIdentifier name="track" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="train_Pos'" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_Q" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_Q" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="track∈TRACK∧r∈ROUTE∧r∉lockedRoute" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt6|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="train ↦ track∈train_Pos∧track=(routeTrackNum(r))∼(routeTrackCount(r))" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt6|org.eventb.core.guard#grd1"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="e_t∈EXTRA_TRACK∧e_t∉ran(train_Pos)" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt6|org.eventb.core.guard#element7"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="train_type(train)=route_type(r)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var=|org.eventb.core.guard#grd2"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="route_FangX(r)=CZ" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var=|org.eventb.core.guard#grd3"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="e_t=section_CZ(r)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var=|org.eventb.core.guard#grd4"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="e_t∉ran(train_Pos)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var=|org.eventb.core.guard#grd5"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="train_leave_D/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_R"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track⦂SECTION·track∈TRACK∧train1 ↦ track∈{train} ⩤ train_Pos∧train2 ↦ track∈{train} ⩤ train_Pos∧train1≠train2⇒track_type(track)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var;"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varK"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_leave_D\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_R" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="train_type'" org.eventb.core.type="ℙ(TRAIN×ROUTE_TYPE)"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="e_t" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="train_Pos'" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_R" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_R" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train ↦ e_t∈train_Pos" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt5|org.eventb.core.guard#grd1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="e_t∈ran((dom(route_type ▷ {D})∩dom(route_FangX ▷ {CZ})) ◁ section_CZ)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#var;|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="train_leave_L/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTALLHYPlockedSwitch_S"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track⦂SECTION·track∈TRACK∧train1 ↦ track∈{train} ⩤ train_Pos∧train2 ↦ track∈{train} ⩤ train_Pos∧train1≠train2⇒track_type(track)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.event#varL"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poSequent#train_leave_L\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedSwitch_S" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="train_type'" org.eventb.core.type="ℙ(TRAIN×ROUTE_TYPE)"/>
+<org.eventb.core.poIdentifier name="train" org.eventb.core.type="TRAIN"/>
+<org.eventb.core.poIdentifier name="e_t" org.eventb.core.type="SECTION"/>
+<org.eventb.core.poIdentifier name="train_Pos'" org.eventb.core.type="ℙ(TRAIN×SECTION)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedSwitch_S" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#EVTIDENTlockedSwitch_S" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="train ↦ e_t∈train_Pos" org.eventb.core.source="/interlock_virtual5_3/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#evt5|org.eventb.core.guard#grd1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="e_t∈ran((dom(route_type ▷ {L})∩dom(route_FangX ▷ {CZ})) ◁ section_CZ)" org.eventb.core.source="/interlock_virtual5_3/M2.bum|org.eventb.core.machineFile#M2|org.eventb.core.event#evt2|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/interlock_virtual5_3/M3.bpo|org.eventb.core.poFile#M3|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="∀train1⦂TRAIN,train2⦂TRAIN,track⦂SECTION·track∈TRACK∧train1 ↦ track∈train_Pos∧train2 ↦ track∈train_Pos∧train1≠train2⇒track_type(track)∈{WC,GD}" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varM"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lockedSwitch∈SWITCH ⇸ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varO"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="∀track⦂SECTION,r⦂ℤ·r∈ROUTE∧track∈dom(routeTrack ▷ {r})∧track∈ran(trackSwitch)⇒(track ↦ r∈lockedTrack⇒dom(trackSwitch ▷ {track}) × {r}⊆lockedSwitch)" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varP"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀r⦂ℤ·r∈lockedRoute⇒dom(routeSwitch ▷ {r}) × {r}⊆lockedSwitch" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#varZ"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="lockedSwitch_D∈SWITCH ↔ ROUTE" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var`"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="∀sw⦂SWITCH,r⦂ℤ·sw ↦ r∈lockedSwitch⇒ran({sw} ◁ doubleSwitch) × {r}⊆lockedSwitch_D" org.eventb.core.source="/interlock_virtual5_3/M3.bum|org.eventb.core.machineFile#M3|org.eventb.core.invariant#var["/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

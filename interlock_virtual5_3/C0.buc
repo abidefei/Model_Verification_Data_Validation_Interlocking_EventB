@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="6" org.eventb.core.identifier="ROUTE"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=")" org.eventb.core.identifier="TRACK"/>
+<org.eventb.core.axiom name="5" org.eventb.core.label="axm1" org.eventb.core.predicate="ROUTE = 1‥12"/>
+<org.eventb.core.axiom name="@" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(SECTION, {Q_1}, {Q_2}, {IG}, {IIG}, {IIIG}, {DG_1_3}, {DG_2_4})"/>
+<org.eventb.core.axiom name="*" org.eventb.core.label="axm3" org.eventb.core.predicate="TRACK = {IG, IIG, IIIG, DG_1_3,DG_2_4}"/>
+<org.eventb.core.axiom name="0" org.eventb.core.label="axm4" org.eventb.core.predicate="routeTrack = {&#13;&#10; DG_1_3↦1, IG↦1,&#13;&#10; DG_1_3↦2, IIG↦2,&#13;&#10; DG_1_3↦3, IIIG↦3,&#13;&#10; DG_2_4↦4, IG↦4,&#13;&#10; DG_2_4↦5, IIG↦5,&#13;&#10; DG_2_4↦6, IIIG↦6,&#13;&#10; DG_1_3↦7,&#13;&#10; DG_1_3↦8,&#13;&#10; DG_1_3↦9,&#13;&#10; DG_2_4↦10,&#13;&#10; DG_2_4↦11,&#13;&#10; DG_2_4↦12&#13;&#10;}"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="4" org.eventb.core.identifier="routeTrack"/>
+<org.eventb.core.carrierSet name="7" org.eventb.core.identifier="SECTION"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="8" org.eventb.core.identifier="Q_1"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="9" org.eventb.core.identifier="Q_2"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=":" org.eventb.core.identifier="IG"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=";" org.eventb.core.identifier="IIG"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="=" org.eventb.core.identifier="IIIG"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="&gt;" org.eventb.core.identifier="DG_1_3"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="?" org.eventb.core.identifier="DG_2_4"/>
+</org.eventb.core.contextFile>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M0"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C1"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="lockedRoute"/>
+<org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="lockedTrack ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="train_Pos ≔ ∅" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="lock_route">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="lock_route"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="lockedTrack ≔ lockedTrack ∪ (routeTrack▷{r})" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="r ∉ lockedRoute"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="dom(routeTrack▷{r}) ∩ dom(lockedTrack) = ∅"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd4" org.eventb.core.predicate="ran({r}◁conflictRoute) ∩ lockedRoute = ∅"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd5" org.eventb.core.predicate="ran(train_Pos) ∩ dom(routeTrack▷{r}) = ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="signal_reopen">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="lock_route"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="routeTrack▷{r} ⊆ lockedTrack"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="∀r1·(r1∈lockedRoute ⇒ r1↦r∉conflictRoute)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd4" org.eventb.core.predicate="ran(train_Pos) ∩ dom(routeTrack▷{r}) = ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="free_route_QX_or_RJ">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="free_route"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="lockedTrack ≔ lockedTrack ∖ (routeTrack▷{r})" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="." org.eventb.core.identifier="lockedTrack"/>
+<org.eventb.core.invariant name="/" org.eventb.core.label="inv1" org.eventb.core.predicate="lockedTrack ∈ TRACK ⇸ ROUTE"/>
+<org.eventb.core.event name="9" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="fault_route">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="free_route"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="free_route_GZ">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="track"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="track ∈ TRACK ∧ r ∉ lockedRoute"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="lockedTrack ≔ lockedTrack ∖ {track↦r}" org.eventb.core.label="act1"/>
+<org.eventb.core.parameter name="," org.eventb.core.identifier="r"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="train_come">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="train"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="train ∈ TRAIN ∧ train ∉ dom(train_Pos)"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="e_t"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="e_t ∈ EXTRA_TRACK ∧ e_t ∉ ran(train_Pos)"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="train_Pos ≔ train_Pos ∪ {train↦e_t}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_into_route">
+<org.eventb.core.parameter name="element1" org.eventb.core.identifier="train"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="grd2" org.eventb.core.predicate="train↦track ∈ train_Pos ∧&#13;&#10;track = approachSection(r) "/>
+<org.eventb.core.action name="element4" org.eventb.core.assignment="train_Pos(train) ≔ routeTrackNum(r)∼(1)" org.eventb.core.label="act2"/>
+<org.eventb.core.parameter name="element5" org.eventb.core.identifier="track"/>
+<org.eventb.core.refinesEvent name="element6" org.eventb.core.target="free_route"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="train_move">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="track"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="track ∈ TRACK ∧ r∈ROUTE ∧ r ∉ lockedRoute"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="lockedTrack ≔ lockedTrack ∖ {track↦r}" org.eventb.core.label="act1"/>
+<org.eventb.core.parameter name="," org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="grd2" org.eventb.core.predicate="track ∈ dom(routeTrackNum(r)) ∧&#13;&#10;routeTrackNum(r)(track) &lt; routeTrackCount(r) ∧&#13;&#10;train↦track ∈ train_Pos"/>
+<org.eventb.core.action name="element4" org.eventb.core.assignment="train_Pos(train) ≔routeTrackNum(r)∼(routeTrackNum(r)(track)+1)" org.eventb.core.label="act3"/>
+<org.eventb.core.parameter name="element6" org.eventb.core.identifier="train"/>
+<org.eventb.core.guard name="element7" org.eventb.core.label="grd3" org.eventb.core.predicate="routeTrackNum(r)∼(routeTrackNum(r)(track)+1)↦r ∈ lockedTrack"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_out_route_1">
+<org.eventb.core.parameter name="internal1" org.eventb.core.identifier="old_r"/>
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="track"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="track ∈ TRACK ∧ old_r ∈ ROUTE ∧ old_r ∉ lockedRoute"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="lockedTrack ≔ lockedTrack ∖ {track↦old_r}" org.eventb.core.label="act2"/>
+<org.eventb.core.parameter name="element1" org.eventb.core.identifier="train"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="grd3" org.eventb.core.predicate="train↦track ∈ train_Pos ∧&#13;&#10;track = routeTrackNum(old_r)∼(routeTrackCount(old_r))"/>
+<org.eventb.core.action name="element5" org.eventb.core.assignment="train_Pos(train)≔ routeTrackNum(r)∼(1)" org.eventb.core.label="act4"/>
+<org.eventb.core.guard name="element7" org.eventb.core.label="grd4" org.eventb.core.predicate="r ∈ lockedRoute ∧&#13;&#10;approachSection(r) = track"/>
+<org.eventb.core.guard name="element8" org.eventb.core.label="grd5" org.eventb.core.predicate="∀r1·(r1≠r ∧ r1∈lockedRoute ⇒ routeTrackNum(r)∼(1) ∉ dom(routeTrack▷{r1}))"/>
+<org.eventb.core.refinesEvent name="element9" org.eventb.core.target="free_route"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="train_out_route_2">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="track"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="track ∈ TRACK ∧ r ∈ ROUTE ∧ r ∉ lockedRoute"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="lockedTrack ≔ lockedTrack ∖ {track↦r}" org.eventb.core.label="act1"/>
+<org.eventb.core.parameter name="," org.eventb.core.identifier="r"/>
+<org.eventb.core.parameter name="element1" org.eventb.core.identifier="train"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="grd2" org.eventb.core.predicate="train↦track ∈ train_Pos ∧&#13;&#10;track = routeTrackNum(r)∼(routeTrackCount(r))"/>
+<org.eventb.core.action name="element5" org.eventb.core.assignment="train_Pos(train) ≔ e_t" org.eventb.core.label="act3"/>
+<org.eventb.core.parameter name="element6" org.eventb.core.identifier="e_t"/>
+<org.eventb.core.guard name="element7" org.eventb.core.label="grd3" org.eventb.core.predicate="e_t ∈ EXTRA_TRACK ∧ e_t ∉ ran(train_Pos)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="train_leave">
+<org.eventb.core.parameter name="element1" org.eventb.core.identifier="train"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="train↦e_t ∈ train_Pos"/>
+<org.eventb.core.parameter name="element2" org.eventb.core.identifier="e_t"/>
+<org.eventb.core.action name="element3" org.eventb.core.assignment="train_Pos ≔ {train}⩤train_Pos" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="2" org.eventb.core.label="inv11" org.eventb.core.predicate="∀r1,r2·((r1∈lockedRoute ∧ r2 ∈ lockedRoute ∧ r1 ≠ r2)&#13;&#10;  ⇒&#13;&#10;dom(lockedTrack▷{r1}) ∩ dom(lockedTrack▷{r2}) = ∅&#13;&#10;)"/>
+<org.eventb.core.invariant name="3" org.eventb.core.label="inv12" org.eventb.core.predicate="∀r·(r∈lockedRoute ⇒ routeTrack▷{r} ⊆ lockedTrack)"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="var1" org.eventb.core.identifier="train_Pos"/>
+<org.eventb.core.invariant name="7" org.eventb.core.label="inv5" org.eventb.core.predicate="lockedTrack ⊆ routeTrack"/>
+<org.eventb.core.invariant name="8" org.eventb.core.label="inv7" org.eventb.core.predicate="∀r1,r2·(r1∈lockedRoute ∧ r2∈lockedRoute ⇒ r1↦r2∉conflictRoute)"/>
+<org.eventb.core.invariant name="inv1" org.eventb.core.label="inv8" org.eventb.core.predicate="train_Pos ∈ TRAIN ⇸ SECTION"/>
+<org.eventb.core.invariant name="var3" org.eventb.core.label="inv9" org.eventb.core.predicate="∀r·(r∈lockedRoute ⇒ ran(train_Pos) ∩ dom(routeTrack▷{r}) = ∅)"/>
+<org.eventb.core.invariant name="var2" org.eventb.core.label="inv10" org.eventb.core.predicate="∀r·(ran(train_Pos) ∩ dom(routeTrack▷{r}) ≠ ∅ ⇒ r∉lockedRoute)"/>
+</org.eventb.core.machineFile>

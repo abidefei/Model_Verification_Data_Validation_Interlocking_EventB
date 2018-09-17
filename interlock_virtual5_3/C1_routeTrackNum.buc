@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="DG_1_3"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="IG"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="0" org.eventb.core.identifier="IIG"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="1" org.eventb.core.identifier="IIIG"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="2" org.eventb.core.identifier="DG_2_4"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="'" org.eventb.core.identifier="ROUTE1"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm1" org.eventb.core.predicate="partition(TRACK, {DG_1_3}, {IG}, {IIG}, {IIIG},{DG_2_4})"/>
+<org.eventb.core.axiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="ROUTE1 = {1,2,3}"/>
+<org.eventb.core.carrierSet name=")" org.eventb.core.identifier="TRACK"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="4" org.eventb.core.identifier="ROUTE2"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="8" org.eventb.core.identifier="ROUTE3"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="axm7" org.eventb.core.identifier="ROUTE4"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm3" org.eventb.core.predicate="routeTrackNum1 = {&#13;&#10; 1↦{DG_1_3↦1, IG↦2},&#13;&#10; 2↦{DG_1_3↦1, IIG↦2},&#13;&#10; 3↦{DG_1_3↦1, IIIG↦2}&#13;&#10;}"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm4" org.eventb.core.predicate="routeTrackNum1 ∈ ROUTE1 → (TRACK ⤔ ℤ)" org.eventb.core.theorem="true"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="axm&gt;" org.eventb.core.identifier="ROUTE"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="/" org.eventb.core.identifier="routeTrackNum1"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="6" org.eventb.core.identifier="routeTrackNum2"/>
+<org.eventb.core.axiom name="3" org.eventb.core.label="axm5" org.eventb.core.predicate="ROUTE2 = {4,5,6}"/>
+<org.eventb.core.axiom name="5" org.eventb.core.label="axm6" org.eventb.core.predicate="routeTrackNum2 = {&#13;&#10; 4↦{DG_2_4↦1, IG↦2},&#13;&#10; 5↦{DG_2_4↦1, IIG↦2},&#13;&#10; 6↦{DG_2_4↦1, IIIG↦2}&#13;&#10;}"/>
+<org.eventb.core.axiom name="7" org.eventb.core.label="axm7" org.eventb.core.predicate="routeTrackNum2 ∈ ROUTE2 → (TRACK ⤔ ℤ)" org.eventb.core.theorem="true"/>
+<org.eventb.core.axiom name="axm1" org.eventb.core.label="axm8" org.eventb.core.predicate="ROUTE3 = {7,8,9}"/>
+<org.eventb.core.axiom name="axm2" org.eventb.core.label="axm9" org.eventb.core.predicate="routeTrackNum3 = {&#13;&#10; 7↦{DG_1_3↦1},&#13;&#10; 8↦{DG_1_3↦1},&#13;&#10; 9↦{DG_1_3↦1}&#13;&#10;}"/>
+<org.eventb.core.axiom name="axm3" org.eventb.core.label="axm10" org.eventb.core.predicate="routeTrackNum3 ∈ ROUTE3 → (TRACK ⤔ ℤ)" org.eventb.core.theorem="true"/>
+<org.eventb.core.axiom name="axm4" org.eventb.core.label="axm11" org.eventb.core.predicate="ROUTE4 = {10,11,12}"/>
+<org.eventb.core.axiom name="axm5" org.eventb.core.label="axm12" org.eventb.core.predicate="routeTrackNum4 = {&#13;&#10; 10↦{DG_2_4↦1},&#13;&#10; 11↦{DG_2_4↦1},&#13;&#10; 12↦{DG_2_4↦1}&#13;&#10;}"/>
+<org.eventb.core.axiom name="axm6" org.eventb.core.label="axm13" org.eventb.core.predicate="routeTrackNum4 ∈ ROUTE4 → (TRACK ⤔ ℤ)" org.eventb.core.theorem="true"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="9" org.eventb.core.identifier="routeTrackNum3"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="axm8" org.eventb.core.identifier="routeTrackNum4"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="axm9" org.eventb.core.identifier="routeTrackNum"/>
+<org.eventb.core.axiom name="axm:" org.eventb.core.label="axm14" org.eventb.core.predicate="routeTrackNum = routeTrackNum1 ∪ routeTrackNum2 ∪ routeTrackNum3 ∪ routeTrackNum4"/>
+<org.eventb.core.axiom name="axm;" org.eventb.core.label="axm15" org.eventb.core.predicate="dom(routeTrackNum1) ∩ dom(routeTrackNum2) = ∅ ∧&#13;&#10;dom(routeTrackNum1) ∩ dom(routeTrackNum3) = ∅ ∧&#13;&#10;dom(routeTrackNum1) ∩ dom(routeTrackNum4) = ∅ ∧&#13;&#10;dom(routeTrackNum2) ∩ dom(routeTrackNum3) = ∅ ∧&#13;&#10;dom(routeTrackNum3) ∩ dom(routeTrackNum4) = ∅" org.eventb.core.theorem="true"/>
+<org.eventb.core.axiom name="axm?" org.eventb.core.label="axm17" org.eventb.core.predicate="ROUTE = ROUTE1 ∪ ROUTE2 ∪ ROUTE3 ∪ ROUTE4"/>
+<org.eventb.core.axiom name="axm=" org.eventb.core.label="axm16" org.eventb.core.predicate="routeTrackNum ∈ ROUTE → (TRACK ⤔ ℤ)" org.eventb.core.theorem="true"/>
+</org.eventb.core.contextFile>

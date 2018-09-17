@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C2"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="lockedRoute"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="." org.eventb.core.identifier="lockedTrack"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="var1" org.eventb.core.identifier="train_Pos"/>
+<org.eventb.core.event name="var2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="train_type ≔ ∅" org.eventb.core.label="act5"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="lock_route">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="lock_route"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd7" org.eventb.core.predicate="∀other_r·(other_r∈lockedRoute ⇒ &#13;&#10;  (routeTrackNum(r)∼(routeTrackCount(r)) ≠ routeTrackNum(other_r)∼(routeTrackCount(other_r)) ∨&#13;&#10;  track_type(routeTrackNum(r)∼(routeTrackCount(r))) = GD)&#13;&#10;)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varD" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="signal_reopen">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="signal_reopen"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd5" org.eventb.core.predicate="∀other_r·(other_r∈lockedRoute ⇒ &#13;&#10;  (routeTrackNum(r)∼(routeTrackCount(r)) ≠ routeTrackNum(other_r)∼(routeTrackCount(other_r)) ∨&#13;&#10;  track_type(routeTrackNum(r)∼(routeTrackCount(r))) = GD)&#13;&#10;)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="free_route_QX_or_RJ">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="free_route_QX_or_RJ"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="fault_route">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="fault_route"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="free_route_GZ">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="free_route_GZ"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="track ∈ dom(routeTrack▷{r}) ∧ track↦r ∈lockedTrack"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="∀train,t2·(train∈dom(train_Pos) ∧ t2∈dom(routeTrack▷{r}) ∧&#13;&#10;           routeTrackNum(r)(t2)≤routeTrackNum(r)(track)&#13;&#10;        ⇒&#13;&#10;           train↦t2 ∉ train_Pos&#13;&#10;          )"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_come_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_come"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="e_t ∈ ran((dom(route_type▷{D}) ∩ dom(route_FangX▷{JZ}))◁approachSection)"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="train_type ≔ train_type ∪ {train↦D}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_come_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_come"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="train_type ≔ train_type ∪ {train↦L}" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="e_t ∈ ran((dom(route_type▷{L}) ∩ dom(route_FangX▷{JZ}))◁approachSection)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var8" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_enter_station">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_into_route"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd3" org.eventb.core.predicate="train_type(train) = route_type(r)"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd4" org.eventb.core.predicate="routeTrackNum(r)∼(1) ∉ ran(train_Pos)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd5" org.eventb.core.predicate="train_Pos(train) ∈ EXTRA_TRACK"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var9" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_move_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_move"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="train_type(train) = route_type(r)"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd5" org.eventb.core.predicate="train_type(train) = D"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd6" org.eventb.core.predicate="routeTrackNum(r)∼(routeTrackNum(r)(track)+1) ∉ ran(train_Pos)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_move_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_move"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="train_type(train) = route_type(r)"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd5" org.eventb.core.predicate="train_type(train) = L"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd6" org.eventb.core.predicate="routeTrackNum(r)∼(routeTrackNum(r)(track)+1) ∉ ran(train_Pos)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var:" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_out_route_1">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_out_route_1"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd6" org.eventb.core.predicate="train_type(train) = route_type(old_r)"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd7" org.eventb.core.predicate="route_type(old_r) = route_type(r)"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd8" org.eventb.core.predicate="route_FangX(old_r) = ZN ∨ route_FangX(old_r) = JZ"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd9" org.eventb.core.predicate="routeTrackNum(r)∼(1) ∉ ran(train_Pos)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var=" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_out_route_2">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_out_route_2"/>
+<org.eventb.core.guard name="grd2" org.eventb.core.label="grd4" org.eventb.core.predicate="train_type(train) = route_type(r)"/>
+<org.eventb.core.guard name="grd3" org.eventb.core.label="grd5" org.eventb.core.predicate="route_FangX(r) = CZ"/>
+<org.eventb.core.guard name="grd4" org.eventb.core.label="grd6" org.eventb.core.predicate="e_t = section_CZ(r)"/>
+<org.eventb.core.guard name="grd5" org.eventb.core.label="grd7" org.eventb.core.predicate="e_t ∉ ran(train_Pos)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var;" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_leave_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_leave"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="e_t ∈ ran((dom(route_type▷{D}) ∩ dom(route_FangX▷{CZ}))◁section_CZ)"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="train_type ≔ {train}⩤train_type" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_leave_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_leave"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="train_type ≔ {train}⩤train_type" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="e_t ∈ ran((dom(route_type▷{L}) ∩ dom(route_FangX▷{CZ}))◁section_CZ)"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="var&gt;" org.eventb.core.identifier="train_type"/>
+<org.eventb.core.invariant name="var?" org.eventb.core.label="inv1" org.eventb.core.predicate="train_type ∈ dom(train_Pos) → ROUTE_TYPE"/>
+<org.eventb.core.refinesMachine name="var@" org.eventb.core.target="M1"/>
+<org.eventb.core.invariant name="varA" org.eventb.core.label="inv2" org.eventb.core.predicate="∀r1,r2·(r1∈lockedRoute ∧ r2∈lockedRoute ∧ r1 ≠ r2 ⇒&#13;&#10;  routeTrackNum(r1)∼(routeTrackCount(r1)) ≠ routeTrackNum(r2)∼(routeTrackCount(r2)) ∨&#13;&#10;  track_type(routeTrackNum(r1)∼(routeTrackCount(r1))) = GD&#13;&#10;)"/>
+<org.eventb.core.invariant name="varB" org.eventb.core.label="inv3" org.eventb.core.predicate="∀train1,train2·(train1∈dom(train_Pos) ∧ train2∈dom(train_Pos) ∧ train1 ≠ train2&#13;&#10;  ⇒&#13;&#10;      ¬( (train_Pos(train1) = train_Pos(train2) ∧&#13;&#10;        (train_type(train1)=L ∨ train_type(train2)=L)))&#13;&#10;)"/>
+<org.eventb.core.invariant name="varC" org.eventb.core.label="inv4" org.eventb.core.predicate="∀train1,train2·( (train1∈dom(train_Pos) ∧&#13;&#10;                  train2∈dom(train_Pos) ∧&#13;&#10;                       train1 ≠ train2  ∧&#13;&#10;  train_Pos(train1) = train_Pos(train2) )&#13;&#10;⇒&#13;&#10;  (train_type(train1) = D ∧ train_type(train2) = D)&#13;&#10;)"/>
+</org.eventb.core.machineFile>

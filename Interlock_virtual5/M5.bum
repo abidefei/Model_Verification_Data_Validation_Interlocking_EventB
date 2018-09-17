@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M4"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C5"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="lockedRoute"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="." org.eventb.core.identifier="lockedTrack"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="var1" org.eventb.core.identifier="train_Pos"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="var&gt;" org.eventb.core.identifier="train_type"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="varN" org.eventb.core.identifier="lockedSwitch"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="var_" org.eventb.core.identifier="lockedSwitch_D"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="varr" org.eventb.core.identifier="switch_Pos"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="varu" org.eventb.core.identifier="LOCKED_SWITCH"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="vas'" org.eventb.core.identifier="switch_delay"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="vas)" org.eventb.core.identifier="rotate_switch"/>
+<org.eventb.core.event name="vas*" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="signal_status ≔ SIGNAL × {STOP}" org.eventb.core.label="act17"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="signal_colour ≔ (dom(signal_type▷{L})×{H}) ∪ (dom(signal_type▷{D})×{B})" org.eventb.core.label="act18"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="SET_QX ≔ ∅" org.eventb.core.label="act19"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="SET_RJ ≔ ∅" org.eventb.core.label="act20"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="route_delay ≔ ROUTE × {0}" org.eventb.core.label="act21"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="lock_route">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="lock_route"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ GO" org.eventb.core.label="act12"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ routeSignalColour(r)" org.eventb.core.label="act13"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt14" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="signal_reopen">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="signal_reopen"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ GO" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ routeSignalColour(r)" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vasJ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="command_free_route_QX_D_1">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ lockedRoute"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="approachSection(r) ∉ ran(train_Pos)"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="SET_QX ≔ SET_QX ∪ {r}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ B" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="act3" org.eventb.core.label="grd3" org.eventb.core.predicate="route_type(r) = D"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt10" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="command_free_route_QX_D_2">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ lockedRoute"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="approachSection(r) ∈ ran(train_Pos)"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ B" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="act3" org.eventb.core.label="grd3" org.eventb.core.predicate="route_type(r) = D"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt12" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="command_free_route_QX_L_1">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ lockedRoute"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="approachSection(r) ∉ ran(train_Pos)"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="SET_QX ≔ SET_QX ∪ {r}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ H" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="act3" org.eventb.core.label="grd3" org.eventb.core.predicate="route_type(r) = L"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt13" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="command_free_route_QX_L_2">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ lockedRoute"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="approachSection(r) ∈ ran(train_Pos)"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ H" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="act3" org.eventb.core.label="grd3" org.eventb.core.predicate="route_type(r) = L"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="free_route_QX">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="free_route_QX_or_RJ"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="r ∈ SET_QX"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="SET_QX ≔ SET_QX ∖ {r}" org.eventb.core.label="act12"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd3" org.eventb.core.predicate="signal_status(routeSignal(r)) = STOP"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="command_free_route_RJ_D">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ lockedRoute"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="approachSection(r) ∈ ran(train_Pos)"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="SET_RJ ≔ SET_RJ ∪ {r}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="route_delay(r) ≔ 0" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ B" org.eventb.core.label="act4"/>
+<org.eventb.core.guard name="act3" org.eventb.core.label="grd3" org.eventb.core.predicate="route_type(r) = D"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt11" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="command_free_route_RJ_L">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ lockedRoute"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="approachSection(r) ∈ ran(train_Pos)"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="SET_RJ ≔ SET_RJ ∪ {r}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="route_delay(r) ≔ 0" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ H" org.eventb.core.label="act4"/>
+<org.eventb.core.guard name="act3" org.eventb.core.label="grd3" org.eventb.core.predicate="route_type(r) = L"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vasM" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="route_delay_D">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ SET_RJ"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="route_type(r) = D"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="route_delay(r) &lt; 30 ∧ dom(routeTrack▷{r}) ∩ ran(train_Pos) = ∅"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="route_delay(r) ≔ route_delay(r) +1" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt9" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="route_delay_L">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ SET_RJ"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="route_type(r) = L"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="route_delay(r) &lt; 180 ∧ dom(routeTrack▷{r}) ∩ ran(train_Pos) = ∅"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="route_delay(r) ≔ route_delay(r) +1" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vasP" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="free_route_RJ_failure">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="SET_RJ ≔ SET_RJ ∖ {r}" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ SET_RJ ∧ r ∉ lockedRoute"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="free_route_RJ">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="free_route_QX_or_RJ"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="r ∈ SET_RJ ∧ route_delay(r) ≥ 30 ∧ r ∈ lockedRoute"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="SET_RJ ≔ SET_RJ ∖ {r}" org.eventb.core.label="act12"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="route_delay(r) ≔ 0" org.eventb.core.label="act13"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd4" org.eventb.core.predicate="signal_status(routeSignal(r)) = STOP"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="fault_route_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="fault_route"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="grd2" org.eventb.core.predicate="route_type(r) = D"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ B" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="fault_route_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="fault_route"/>
+<org.eventb.core.guard name="grd1" org.eventb.core.label="grd2" org.eventb.core.predicate="route_type(r) = L"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ H" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="free_route_GZ">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="free_route_GZ"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="SET_RJ, SET_QX ≔ SET_RJ∖{r}, SET_QX∖{r}" org.eventb.core.label="act11"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_come_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_come_D"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_come_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_come_L"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_enter_station_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_enter_station"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd7" org.eventb.core.predicate="route_type(r) = D"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ B" org.eventb.core.label="act4"/>
+<org.eventb.core.guard name="act3" org.eventb.core.label="grd8" org.eventb.core.predicate="routeTrackNum(r)∼(1) ↦ r ∈ lockedTrack"/>
+<org.eventb.core.action name="act4" org.eventb.core.assignment="SET_RJ ≔ SET_RJ ∖ {r}" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="act5" org.eventb.core.assignment="route_delay(r) ≔ 0" org.eventb.core.label="act6"/>
+<org.eventb.core.guard name="act6" org.eventb.core.label="grd9" org.eventb.core.predicate="r ∉ SET_QX"/>
+<org.eventb.core.guard name="act7" org.eventb.core.label="grd10" org.eventb.core.predicate="r ∉ SET_RJ ∨ (r ∈ lockedRoute ∧ route_delay(r)&lt;30)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_enter_station_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_enter_station"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd7" org.eventb.core.predicate="route_type(r) = L"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="act2" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ H" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="act3" org.eventb.core.assignment="SET_RJ ≔ SET_RJ ∖ {r}" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="act4" org.eventb.core.assignment="route_delay(r) ≔ 0" org.eventb.core.label="act6"/>
+<org.eventb.core.guard name="act5" org.eventb.core.label="grd8" org.eventb.core.predicate="r ∉ SET_QX"/>
+<org.eventb.core.guard name="act6" org.eventb.core.label="grd9" org.eventb.core.predicate="r ∉ SET_RJ ∨ (r ∈ lockedRoute ∧ route_delay(r)&lt;180)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_move_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_move_D"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd9" org.eventb.core.predicate="track↦r ∈ lockedTrack"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_move_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_move_L"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_out_route_1_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_out_route_1"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd12" org.eventb.core.predicate="route_type(r) = D"/>
+<org.eventb.core.action name="act8" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act13"/>
+<org.eventb.core.action name="act9" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ B" org.eventb.core.label="act14"/>
+<org.eventb.core.action name="act:" org.eventb.core.assignment="SET_RJ ≔ SET_RJ ∖ {r}" org.eventb.core.label="act15"/>
+<org.eventb.core.action name="act;" org.eventb.core.assignment="route_delay(r) ≔ 0" org.eventb.core.label="act16"/>
+<org.eventb.core.guard name="act=" org.eventb.core.label="grd13" org.eventb.core.predicate="r ∉ SET_QX"/>
+<org.eventb.core.guard name="act&gt;" org.eventb.core.label="grd14" org.eventb.core.predicate="r ∉ SET_RJ ∨ (r ∈ lockedRoute ∧ route_delay(r)&lt;30)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_out_route_1_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_out_route_1"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd12" org.eventb.core.predicate="route_type(r) = L"/>
+<org.eventb.core.action name="act8" org.eventb.core.assignment="signal_status(routeSignal(r)) ≔ STOP" org.eventb.core.label="act13"/>
+<org.eventb.core.action name="act9" org.eventb.core.assignment="signal_colour(routeSignal(r)) ≔ H" org.eventb.core.label="act14"/>
+<org.eventb.core.action name="act:" org.eventb.core.assignment="SET_RJ ≔ SET_RJ ∖ {r}" org.eventb.core.label="act15"/>
+<org.eventb.core.action name="act;" org.eventb.core.assignment="route_delay(r) ≔ 0" org.eventb.core.label="act16"/>
+<org.eventb.core.guard name="act=" org.eventb.core.label="grd13" org.eventb.core.predicate="r ∉ SET_QX"/>
+<org.eventb.core.guard name="act&gt;" org.eventb.core.label="grd14" org.eventb.core.predicate="r ∉ SET_RJ ∨ (r ∈ lockedRoute ∧ route_delay(r)&lt;180)"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_out_route_2">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_out_route_2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_leave_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_leave_D"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_leave_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_leave_L"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas8" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="rotate_switch_1">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="rotate_switch_1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas9" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="rotate_switch_2">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="rotate_switch_2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas:" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="switch_delay_1">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="switch_delay_1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas;" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="switch_delay_2">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="switch_delay_2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas=" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="rotate_switch_complete_1">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="rotate_switch_complete_1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vas&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="rotate_switch_complete_2">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="rotate_switch_complete_2"/>
+</org.eventb.core.event>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="vas?" org.eventb.core.identifier="signal_status"/>
+<org.eventb.core.invariant name="vas@" org.eventb.core.label="inv1" org.eventb.core.predicate="signal_status ∈ SIGNAL → SIGNAL_MEAN"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="vasA" org.eventb.core.identifier="signal_colour"/>
+<org.eventb.core.invariant name="vasB" org.eventb.core.label="inv2" org.eventb.core.predicate="signal_colour ∈ SIGNAL → SIGNAL_COLOUR"/>
+<org.eventb.core.invariant name="vasC" org.eventb.core.label="inv3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.invariant name="vasD" org.eventb.core.label="inv4" org.eventb.core.predicate="∀s·(s∈SIGNAL ⇒&#13;&#10;   (&#13;&#10;     signal_status(s) = STOP&#13;&#10;       ⇔&#13;&#10;     (signal_colour(s) = B ∨ signal_colour(s) = H)&#13;&#10;   )&#13;&#10;)"/>
+<org.eventb.core.invariant name="vasE" org.eventb.core.label="inv5" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="vasF" org.eventb.core.identifier="SET_QX"/>
+<org.eventb.core.invariant name="vasG" org.eventb.core.label="inv6" org.eventb.core.predicate="SET_QX ⊆ ROUTE"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="vasH" org.eventb.core.identifier="SET_RJ"/>
+<org.eventb.core.invariant name="vasI" org.eventb.core.label="inv7" org.eventb.core.predicate="SET_RJ ⊆ ROUTE"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="vasK" org.eventb.core.identifier="route_delay"/>
+<org.eventb.core.invariant name="vasL" org.eventb.core.label="inv8" org.eventb.core.predicate="route_delay ∈ ROUTE → ℤ"/>
+<org.eventb.core.invariant name="vasQ" org.eventb.core.label="inv9" org.eventb.core.predicate="∀sw,r·(sw↦r∈lockedSwitch ∧ r↦sw∈dom(routeSwitchPos)&#13;&#10;  ⇒ &#13;&#10;      switch_Pos(sw) = routeSwitchPos(r↦sw)&#13;&#10;)"/>
+<org.eventb.core.invariant name="vasR" org.eventb.core.label="inv10" org.eventb.core.predicate="∀sw,r·(sw↦r∈lockedSwitch ∧ r↦sw∈dom(r_otherSwitchPos)&#13;&#10;  ⇒ &#13;&#10;      switch_Pos(sw) = r_otherSwitchPos(r↦sw)&#13;&#10;)"/>
+</org.eventb.core.machineFile>

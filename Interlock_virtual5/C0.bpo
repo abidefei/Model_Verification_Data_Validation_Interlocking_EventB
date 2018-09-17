@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.poIdentifier name="SECTION" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.poIdentifier name="TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.poIdentifier name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="axm5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Interlock_virtual5/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP*"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒finite(dom(routeTrack ▷ {r}))" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#1"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Interlock_virtual5/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Interlock_virtual5/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP*"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYP*" org.eventb.core.parentSet="/Interlock_virtual5/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TRACK⊆SECTION" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="routeTrack∈TRACK ↔ ROUTE" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="dom(routeTrack)=TRACK∧ran(routeTrack)=ROUTE" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrack ▷ {r}))" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#2"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Interlock_virtual5/C0.bpo|org.eventb.core.poFile#C0|org.eventb.core.poPredicateSet#HYP*" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))&gt;1" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#1"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

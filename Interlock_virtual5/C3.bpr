@@ -1,0 +1,1587 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="axm4/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="track" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="SECTION,TRACK_TYPE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ROUTE_TYPE,{D},{L}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ROUTE_FX,{JZ},{CZ},{ZN}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRACK_TYPE,{DC},{WC},{GD}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16,p17"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21,p22"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p29"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p32"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p33"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p44" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p46" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
+<org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p48"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p49" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p50"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p43" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p57"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p45" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p58"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p59"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p50" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p60"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p51" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p61"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees track)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p62">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p62" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p64" org.eventb.core.prHyps="p63">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p64" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p65">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p65" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p63">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p63" org.eventb.core.prHyps="p63"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p66">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p66" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.prIdent name="track_type" org.eventb.core.type="ℙ(SECTION×TRACK_TYPE)"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="EXTRA_TRACK⊆SECTION">
+<org.eventb.core.prIdent name="EXTRA_TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="∀r⦂ROUTE·card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="track_type∈TRACK → TRACK_TYPE"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀r⦂ROUTE·¬dom(routeTrack ▷ {r})=dom(routeTrackNum(r))⇒dom(routeTrackNum(r)) ∖ dom(routeTrack ▷ {r})={(routeTrackNum(r))∼(routeTrackCount(r))}">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="dom(routeTrack)=TRACK">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="dom(routeTrack)=TRACK∧ran(routeTrack)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·r∈ROUTE∧track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒dom(routeSwitch ▷ {r})=dom(trackSwitch ▷ dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="routeSwitch" org.eventb.core.type="ℙ(SWITCH×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="ROUTE_TYPE={D,L}">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DC=WC">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ROUTE_FX={JZ,CZ,ZN}">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DC=GD">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="dom(conflictRoute)=ROUTE∧ran(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬WC=GD">
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(ROUTE_TYPE,{D},{L})">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="track_type∈SECTION ⇸ TRACK_TYPE"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="ran(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="ran(routeTrack)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬JZ=ZN">
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀r⦂ROUTE·route_type(r)=D⇒(dom(routeTrack ▷ {r})≠dom(routeTrackNum(r))⇔track_type((routeTrackNum(r))∼(routeTrackCount(r)))=WC∨track_type((routeTrackNum(r))∼(routeTrackCount(r)))=GD)">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+<org.eventb.core.prIdent name="route_type" org.eventb.core.type="ℙ(ROUTE×ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀r⦂ROUTE·route_type(r)=D⇒(¬dom(routeTrack ▷ {r})=dom(routeTrackNum(r))⇔track_type((routeTrackNum(r))∼(routeTrackCount(r)))=WC∨track_type((routeTrackNum(r))∼(routeTrackCount(r)))=GD)">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+<org.eventb.core.prIdent name="route_type" org.eventb.core.type="ℙ(ROUTE×ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="∀r⦂ROUTE·dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="∀r⦂ROUTE·ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬D=L">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒dom(routeSwitch ▷ {r})=dom(trackSwitch ▷ dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="routeSwitch" org.eventb.core.type="ℙ(SWITCH×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀track1⦂SECTION,track2⦂SECTION·track1≠track2⇒ran({track1} ◁ proTrack)∩ran({track2} ◁ proTrack)=(∅ ⦂ ℙ(SECTION))">
+<org.eventb.core.prIdent name="proTrack" org.eventb.core.type="ℙ(SECTION×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="TRACK⊆SECTION"/>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·⊤∧track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="∀r⦂ROUTE·routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬CZ=ZN">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀r⦂ROUTE·card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀track⦂SECTION·track∈TRACK⇒track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬JZ=CZ">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="dom(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(ROUTE_FX,{JZ},{CZ},{ZN})">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="track∈dom(track_type)">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="conflictRoute∈ROUTE ↔ ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒r∉ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀r⦂ROUTE·dom(routeTrack ▷ {r})≠dom(routeTrackNum(r))⇒dom(routeTrackNum(r)) ∖ dom(routeTrack ▷ {r})={(routeTrackNum(r))∼(routeTrackCount(r))}">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="track∈TRACK⇒track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(TRACK_TYPE,{DC},{WC},{GD})">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="routeSwitch∈SWITCH ↔ ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="routeSwitch" org.eventb.core.type="ℙ(SWITCH×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀track1⦂SECTION,track2⦂SECTION·¬track1=track2⇒ran({track1} ◁ proTrack)∩ran({track2} ◁ proTrack)=(∅ ⦂ ℙ(SECTION))">
+<org.eventb.core.prIdent name="proTrack" org.eventb.core.type="ℙ(SECTION×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="∀r⦂ROUTE·¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="TRACK_TYPE={DC,WC,GD}">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="∀r⦂ROUTE·dom(routeSwitch ▷ {r})=dom(trackSwitch ▷ dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="routeSwitch" org.eventb.core.type="ℙ(SWITCH×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="track∈TRACK">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="TRACK"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm5/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="track" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="SECTION,TRACK_TYPE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ROUTE_TYPE,{D},{L}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ROUTE_FX,{JZ},{CZ},{ZN}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRACK_TYPE,{DC},{WC},{GD}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16,p17"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21,p22"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p31"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p34"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p35"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p44" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p46" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p48" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
+<org.eventb.core.prHypAction name="HIDE11" org.eventb.core.prHyps="p50"/>
+<org.eventb.core.prHypAction name="REWRITE12" org.eventb.core.prHidden="p51" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="REWRITE13" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p57"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p43" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p58"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p45" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p59"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p60"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p49" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p61"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p52" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p62"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p53" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p63"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees track)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p64">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p64" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p66" org.eventb.core.prHyps="p65">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p66" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p67">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p67" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p65">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p65" org.eventb.core.prHyps="p65"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p68">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p68" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.prIdent name="track_type" org.eventb.core.type="ℙ(SECTION×TRACK_TYPE)"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="EXTRA_TRACK⊆SECTION">
+<org.eventb.core.prIdent name="EXTRA_TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="∀r⦂ROUTE·card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="track_type∈TRACK → TRACK_TYPE"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀r⦂ROUTE·¬dom(routeTrack ▷ {r})=dom(routeTrackNum(r))⇒dom(routeTrackNum(r)) ∖ dom(routeTrack ▷ {r})={(routeTrackNum(r))∼(routeTrackCount(r))}">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="dom(routeTrack)=TRACK">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="dom(routeTrack)=TRACK∧ran(routeTrack)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·r∈ROUTE∧track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒dom(routeSwitch ▷ {r})=dom(trackSwitch ▷ dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="routeSwitch" org.eventb.core.type="ℙ(SWITCH×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀track⦂SECTION·track∈TRACK∧track_type(track)=DC⇒track∈ran(trackSwitch)">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="ROUTE_TYPE={D,L}">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DC=WC">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ROUTE_FX={JZ,CZ,ZN}">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DC=GD">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="dom(conflictRoute)=ROUTE∧ran(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬WC=GD">
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(ROUTE_TYPE,{D},{L})">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p68" org.eventb.core.predicate="track_type∈SECTION ⇸ TRACK_TYPE"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="ran(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="ran(routeTrack)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬JZ=ZN">
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀r⦂ROUTE·route_type(r)=D⇒(dom(routeTrack ▷ {r})≠dom(routeTrackNum(r))⇔track_type((routeTrackNum(r))∼(routeTrackCount(r)))=WC∨track_type((routeTrackNum(r))∼(routeTrackCount(r)))=GD)">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+<org.eventb.core.prIdent name="route_type" org.eventb.core.type="ℙ(ROUTE×ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀r⦂ROUTE·route_type(r)=D⇒(¬dom(routeTrack ▷ {r})=dom(routeTrackNum(r))⇔track_type((routeTrackNum(r))∼(routeTrackCount(r)))=WC∨track_type((routeTrackNum(r))∼(routeTrackCount(r)))=GD)">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+<org.eventb.core.prIdent name="route_type" org.eventb.core.type="ℙ(ROUTE×ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="∀r⦂ROUTE·dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀track⦂SECTION·track∈TRACK∧track_type(track)=DC⇒dom(trackSwitch ▷ {track})≠(∅ ⦂ ℙ(SWITCH))">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="∀r⦂ROUTE·ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬D=L">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒dom(routeSwitch ▷ {r})=dom(trackSwitch ▷ dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="routeSwitch" org.eventb.core.type="ℙ(SWITCH×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀track1⦂SECTION,track2⦂SECTION·track1≠track2⇒ran({track1} ◁ proTrack)∩ran({track2} ◁ proTrack)=(∅ ⦂ ℙ(SECTION))">
+<org.eventb.core.prIdent name="proTrack" org.eventb.core.type="ℙ(SECTION×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="TRACK⊆SECTION"/>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·⊤∧track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p66" org.eventb.core.predicate="track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="∀r⦂ROUTE·routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬CZ=ZN">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀r⦂ROUTE·card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀track⦂SECTION·track∈TRACK⇒track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬JZ=CZ">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="dom(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(ROUTE_FX,{JZ},{CZ},{ZN})">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p67" org.eventb.core.predicate="track∈dom(track_type)">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="conflictRoute∈ROUTE ↔ ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒r∉ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀r⦂ROUTE·dom(routeTrack ▷ {r})≠dom(routeTrackNum(r))⇒dom(routeTrackNum(r)) ∖ dom(routeTrack ▷ {r})={(routeTrackNum(r))∼(routeTrackCount(r))}">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="track∈TRACK⇒track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(TRACK_TYPE,{DC},{WC},{GD})">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="routeSwitch∈SWITCH ↔ ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="routeSwitch" org.eventb.core.type="ℙ(SWITCH×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀track1⦂SECTION,track2⦂SECTION·¬track1=track2⇒ran({track1} ◁ proTrack)∩ran({track2} ◁ proTrack)=(∅ ⦂ ℙ(SECTION))">
+<org.eventb.core.prIdent name="proTrack" org.eventb.core.type="ℙ(SECTION×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="∀r⦂ROUTE·¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="TRACK_TYPE={DC,WC,GD}">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="∀r⦂ROUTE·dom(routeSwitch ▷ {r})=dom(trackSwitch ▷ dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="routeSwitch" org.eventb.core.type="ℙ(SWITCH×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p65" org.eventb.core.predicate="track∈TRACK">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="TRACK"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm2/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="track" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="SECTION,TRACK_TYPE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ROUTE_TYPE,{D},{L}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ROUTE_FX,{JZ},{CZ},{ZN}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRACK_TYPE,{DC},{WC},{GD}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16,p17"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21,p22"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p29"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p30" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p31"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p32"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p33"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p44" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p46" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p48"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p50"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p43" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p45" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p48" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p57"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees track)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p58">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p58" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p60" org.eventb.core.prHyps="p59">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p60" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p61">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p61" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p59">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p59" org.eventb.core.prHyps="p59"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p62">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p62" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.prIdent name="track_type" org.eventb.core.type="ℙ(SECTION×TRACK_TYPE)"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="EXTRA_TRACK⊆SECTION">
+<org.eventb.core.prIdent name="EXTRA_TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀r⦂ROUTE·card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="track_type∈TRACK → TRACK_TYPE"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀r⦂ROUTE·¬dom(routeTrack ▷ {r})=dom(routeTrackNum(r))⇒dom(routeTrackNum(r)) ∖ dom(routeTrack ▷ {r})={(routeTrackNum(r))∼(routeTrackCount(r))}">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="dom(routeTrack)=TRACK">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="dom(routeTrack)=TRACK∧ran(routeTrack)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·r∈ROUTE∧track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="ROUTE_TYPE={D,L}">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DC=WC">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ROUTE_FX={JZ,CZ,ZN}">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DC=GD">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="dom(conflictRoute)=ROUTE∧ran(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬WC=GD">
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(ROUTE_TYPE,{D},{L})">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="track_type∈SECTION ⇸ TRACK_TYPE"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="ran(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="ran(routeTrack)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬JZ=ZN">
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀r⦂ROUTE·route_type(r)=D⇒(dom(routeTrack ▷ {r})≠dom(routeTrackNum(r))⇔track_type((routeTrackNum(r))∼(routeTrackCount(r)))=WC∨track_type((routeTrackNum(r))∼(routeTrackCount(r)))=GD)">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+<org.eventb.core.prIdent name="route_type" org.eventb.core.type="ℙ(ROUTE×ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀r⦂ROUTE·route_type(r)=D⇒(¬dom(routeTrack ▷ {r})=dom(routeTrackNum(r))⇔track_type((routeTrackNum(r))∼(routeTrackCount(r)))=WC∨track_type((routeTrackNum(r))∼(routeTrackCount(r)))=GD)">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+<org.eventb.core.prIdent name="route_type" org.eventb.core.type="ℙ(ROUTE×ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="∀r⦂ROUTE·dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀r⦂ROUTE·ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬D=L">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀track1⦂SECTION,track2⦂SECTION·track1≠track2⇒ran({track1} ◁ proTrack)∩ran({track2} ◁ proTrack)=(∅ ⦂ ℙ(SECTION))">
+<org.eventb.core.prIdent name="proTrack" org.eventb.core.type="ℙ(SECTION×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="TRACK⊆SECTION"/>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·⊤∧track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="∀r⦂ROUTE·routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬CZ=ZN">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="∀r⦂ROUTE·card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀track⦂SECTION·track∈TRACK⇒track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬JZ=CZ">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="dom(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(ROUTE_FX,{JZ},{CZ},{ZN})">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="track∈dom(track_type)">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="conflictRoute∈ROUTE ↔ ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒r∉ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀r⦂ROUTE·dom(routeTrack ▷ {r})≠dom(routeTrackNum(r))⇒dom(routeTrackNum(r)) ∖ dom(routeTrack ▷ {r})={(routeTrackNum(r))∼(routeTrackCount(r))}">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="track∈TRACK⇒track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(TRACK_TYPE,{DC},{WC},{GD})">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀track1⦂SECTION,track2⦂SECTION·¬track1=track2⇒ran({track1} ◁ proTrack)∩ran({track2} ◁ proTrack)=(∅ ⦂ ℙ(SECTION))">
+<org.eventb.core.prIdent name="proTrack" org.eventb.core.type="ℙ(SECTION×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="∀r⦂ROUTE·¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="TRACK_TYPE={DC,WC,GD}">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="track∈TRACK">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="TRACK"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="axm3/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="track" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="SECTION,TRACK_TYPE">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ROUTE_TYPE,{D},{L}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(ROUTE_FX,{JZ},{CZ},{ZN}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(TRACK_TYPE,{DC},{WC},{GD}))" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14"/>
+<org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16,p17"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p20" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p21,p22"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p23" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p24"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p29" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p30"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p31"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p33"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p34"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p35"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p36" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p37"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p41"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p42" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p43"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p44" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p45"/>
+<org.eventb.core.prHypAction name="REWRITE9" org.eventb.core.prHidden="p46" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p47"/>
+<org.eventb.core.prHypAction name="REWRITE10" org.eventb.core.prHidden="p48" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p49"/>
+<org.eventb.core.prHypAction name="REWRITE11" org.eventb.core.prHidden="p24" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p50"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p51"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p37" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p52"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p53"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p41" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p54"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p43" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p55"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p45" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p56"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p47" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p57"/>
+<org.eventb.core.prHypAction name="REWRITE7" org.eventb.core.prHidden="p49" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p58"/>
+<org.eventb.core.prHypAction name="REWRITE8" org.eventb.core.prHidden="p50" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p59"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees track)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p60">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p60" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p62" org.eventb.core.prHyps="p61">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p62" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p63">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p63" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p61">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p61" org.eventb.core.prHyps="p61"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p64">
+<org.eventb.core.prRule name="r8" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p64" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.prIdent name="track_type" org.eventb.core.type="ℙ(SECTION×TRACK_TYPE)"/>
+<org.eventb.core.prPred name="p24" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p35" org.eventb.core.predicate="EXTRA_TRACK⊆SECTION">
+<org.eventb.core.prIdent name="EXTRA_TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p45" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p54" org.eventb.core.predicate="∀r⦂ROUTE·card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p39" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="track_type∈TRACK → TRACK_TYPE"/>
+<org.eventb.core.prPred name="p26" org.eventb.core.predicate="∀r⦂ROUTE·¬dom(routeTrack ▷ {r})=dom(routeTrackNum(r))⇒dom(routeTrackNum(r)) ∖ dom(routeTrack ▷ {r})={(routeTrackNum(r))∼(routeTrackCount(r))}">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="dom(routeTrack)=TRACK">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p44" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="dom(routeTrack)=TRACK∧ran(routeTrack)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p48" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·r∈ROUTE∧track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p30" org.eventb.core.predicate="∀track⦂SECTION·track∈TRACK∧track_type(track)=DC⇒track∈ran(trackSwitch)">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="ROUTE_TYPE={D,L}">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DC=WC">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ROUTE_FX={JZ,CZ,ZN}">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DC=GD">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="dom(conflictRoute)=ROUTE∧ran(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬WC=GD">
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p37" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p40" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(ROUTE_TYPE,{D},{L})">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p64" org.eventb.core.predicate="track_type∈SECTION ⇸ TRACK_TYPE"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="ran(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p53" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="ran(routeTrack)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬JZ=ZN">
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p27" org.eventb.core.predicate="∀r⦂ROUTE·route_type(r)=D⇒(dom(routeTrack ▷ {r})≠dom(routeTrackNum(r))⇔track_type((routeTrackNum(r))∼(routeTrackCount(r)))=WC∨track_type((routeTrackNum(r))∼(routeTrackCount(r)))=GD)">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+<org.eventb.core.prIdent name="route_type" org.eventb.core.type="ℙ(ROUTE×ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p28" org.eventb.core.predicate="∀r⦂ROUTE·route_type(r)=D⇒(¬dom(routeTrack ▷ {r})=dom(routeTrackNum(r))⇔track_type((routeTrackNum(r))∼(routeTrackCount(r)))=WC∨track_type((routeTrackNum(r))∼(routeTrackCount(r)))=GD)">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+<org.eventb.core.prIdent name="route_type" org.eventb.core.type="ℙ(ROUTE×ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p57" org.eventb.core.predicate="∀r⦂ROUTE·dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p29" org.eventb.core.predicate="∀track⦂SECTION·track∈TRACK∧track_type(track)=DC⇒dom(trackSwitch ▷ {track})≠(∅ ⦂ ℙ(SWITCH))">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="SWITCH" org.eventb.core.type="ℙ(SWITCH)"/>
+<org.eventb.core.prIdent name="trackSwitch" org.eventb.core.type="ℙ(SWITCH×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀r⦂ROUTE·ran(routeTrackNum(r))=1 ‥ routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p36" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬D=L">
+<org.eventb.core.prIdent name="D" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="L" org.eventb.core.type="ROUTE_TYPE"/>
+<org.eventb.core.prIdent name="ROUTE_TYPE" org.eventb.core.type="ℙ(ROUTE_TYPE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p33" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p55" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀track1⦂SECTION,track2⦂SECTION·track1≠track2⇒ran({track1} ◁ proTrack)∩ran({track2} ◁ proTrack)=(∅ ⦂ ℙ(SECTION))">
+<org.eventb.core.prIdent name="proTrack" org.eventb.core.type="ℙ(SECTION×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p31" org.eventb.core.predicate="TRACK⊆SECTION"/>
+<org.eventb.core.prPred name="p49" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·⊤∧track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p62" org.eventb.core.predicate="track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p58" org.eventb.core.predicate="∀r⦂ROUTE,track⦂SECTION·track∈dom(routeTrackNum(r))∧routeTrackNum(r)(track)&lt;routeTrackCount(r)⇒track∈dom(routeTrack ▷ {r})">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀r⦂ROUTE·routeTrackCount(r)&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬CZ=ZN">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p47" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p32" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p51" org.eventb.core.predicate="∀r⦂ROUTE·card(dom(routeTrack ▷ {r}))&gt;1">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀track⦂SECTION·track∈TRACK⇒track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬JZ=CZ">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="dom(conflictRoute)=ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p42" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(ROUTE_FX,{JZ},{CZ},{ZN})">
+<org.eventb.core.prIdent name="CZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="JZ" org.eventb.core.type="ROUTE_FX"/>
+<org.eventb.core.prIdent name="ROUTE_FX" org.eventb.core.type="ℙ(ROUTE_FX)"/>
+<org.eventb.core.prIdent name="ZN" org.eventb.core.type="ROUTE_FX"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p63" org.eventb.core.predicate="track∈dom(track_type)">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p38" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒finite(dom(routeTrack ▷ {r}))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p41" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒card(dom(routeTrack ▷ {r}))=routeTrackCount(r) − 1∨card(dom(routeTrack ▷ {r}))=routeTrackCount(r)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p34" org.eventb.core.predicate="conflictRoute∈ROUTE ↔ ROUTE">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p23" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒r∉ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p25" org.eventb.core.predicate="∀r⦂ROUTE·dom(routeTrack ▷ {r})≠dom(routeTrackNum(r))⇒dom(routeTrackNum(r)) ∖ dom(routeTrack ▷ {r})={(routeTrackNum(r))∼(routeTrackCount(r))}">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackCount" org.eventb.core.type="ℙ(ROUTE×ℤ)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p60" org.eventb.core.predicate="track∈TRACK⇒track∈dom(track_type)∧track_type∈SECTION ⇸ TRACK_TYPE">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(TRACK_TYPE,{DC},{WC},{GD})">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="∀track1⦂SECTION,track2⦂SECTION·¬track1=track2⇒ran({track1} ◁ proTrack)∩ran({track2} ◁ proTrack)=(∅ ⦂ ℙ(SECTION))">
+<org.eventb.core.prIdent name="proTrack" org.eventb.core.type="ℙ(SECTION×SECTION)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p59" org.eventb.core.predicate="∀r⦂ROUTE·¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p43" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒finite(dom(routeTrackNum(r)))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p46" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒dom(routeTrack ▷ {r})⊆dom(routeTrackNum(r))">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.prIdent name="routeTrackNum" org.eventb.core.type="ℙ(ROUTE×ℙ(SECTION×ℤ))"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="TRACK_TYPE={DC,WC,GD}">
+<org.eventb.core.prIdent name="DC" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="GD" org.eventb.core.type="TRACK_TYPE"/>
+<org.eventb.core.prIdent name="WC" org.eventb.core.type="TRACK_TYPE"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p50" org.eventb.core.predicate="∀r⦂ROUTE·⊤⇒¬r∈ran({r} ◁ conflictRoute)">
+<org.eventb.core.prIdent name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.prIdent name="conflictRoute" org.eventb.core.type="ℙ(ROUTE×ROUTE)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p61" org.eventb.core.predicate="track∈TRACK">
+<org.eventb.core.prIdent name="track" org.eventb.core.type="SECTION"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="TRACK"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r8" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

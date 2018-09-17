@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="ROUTE" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.poIdentifier name="SECTION" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.poIdentifier name="TRACK" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.poIdentifier name="routeTrack" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+<org.eventb.core.poPredicate name="routeTracl" org.eventb.core.predicate="TRACK⊆SECTION" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="routeTracm" org.eventb.core.predicate="routeTrack∈TRACK ↔ ROUTE" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#0"/>
+<org.eventb.core.poPredicate name="routeTracn" org.eventb.core.predicate="dom(routeTrack)=TRACK∧ran(routeTrack)=ROUTE" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#3"/>
+<org.eventb.core.poPredicate name="routeTraco" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrack ▷ {r}))" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="routeTracp" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))&gt;1" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Interlock_virtual5/M0.bpo|org.eventb.core.poFile#M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lockedRoute" org.eventb.core.type="ℙ(ROUTE)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedRoutf" org.eventb.core.parentSet="/Interlock_virtual5/M0.bpo|org.eventb.core.poFile#M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lockedRoute'" org.eventb.core.type="ℙ(ROUTE)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedRoutf" org.eventb.core.parentSet="/Interlock_virtual5/M0.bpo|org.eventb.core.poFile#M0|org.eventb.core.poPredicateSet#EVTIDENTlockedRoutf" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedRoutg" org.eventb.core.parentSet="/Interlock_virtual5/M0.bpo|org.eventb.core.poFile#M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ROUTE"/>
+<org.eventb.core.poIdentifier name="lockedRoute'" org.eventb.core.type="ℙ(ROUTE)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedRoutg" org.eventb.core.parentSet="/Interlock_virtual5/M0.bpo|org.eventb.core.poFile#M0|org.eventb.core.poPredicateSet#EVTIDENTlockedRoutg" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈ROUTE" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#)|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTlockedRouth" org.eventb.core.parentSet="/Interlock_virtual5/M0.bpo|org.eventb.core.poFile#M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="r" org.eventb.core.type="ROUTE"/>
+<org.eventb.core.poIdentifier name="lockedRoute'" org.eventb.core.type="ℙ(ROUTE)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlockedRouth" org.eventb.core.parentSet="/Interlock_virtual5/M0.bpo|org.eventb.core.poFile#M0|org.eventb.core.poPredicateSet#EVTIDENTlockedRouth" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈lockedRoute" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#,|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Interlock_virtual5/M0.bpo|org.eventb.core.poFile#M0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lockedRoute⊆ROUTE" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.invariant#+"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

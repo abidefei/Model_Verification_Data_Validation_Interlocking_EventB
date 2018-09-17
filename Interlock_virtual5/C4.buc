@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C3"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="SWITCH_POS"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=")" org.eventb.core.identifier="dw"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="fw"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="null"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm1" org.eventb.core.predicate="partition(SWITCH_POS, {dw}, {fw}, {null})"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="-" org.eventb.core.identifier="routeSwitchPos"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="axm2" org.eventb.core.predicate="RS ∈ ROUTE ↔ SWITCH"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm3" org.eventb.core.predicate="routeSwitchPos ∈ RS⇸SWITCH_POS"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="axm4" org.eventb.core.predicate="∀r·(r∈ROUTE ⇒ ran({r}◁dom(routeSwitchPos))&#13;&#10; = &#13;&#10;    dom(routeSwitch▷{r})&#13;&#10;)"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="1" org.eventb.core.identifier="RS"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="3" org.eventb.core.identifier="r_otherSwitchPos"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="axm5" org.eventb.core.predicate="r_otherSwitchPos ∈ RS ⇸ SWITCH_POS"/>
+<org.eventb.core.axiom name="5" org.eventb.core.label="axm6" org.eventb.core.predicate="∀r·(r∈ROUTE ⇒ ran({r}◁dom(r_otherSwitchPos))&#13;&#10; = &#13;&#10;    ran((dom(routeSwitch▷{r}))◁doubleSwitch)&#13;&#10;)"/>
+<org.eventb.core.axiom name="6" org.eventb.core.label="axm7" org.eventb.core.predicate="∀sw,r·(r↦sw∈dom(routeSwitchPos) ∧ sw∈dom(doubleSwitch) ⇒ r↦doubleSwitch(sw)∈dom(r_otherSwitchPos))"/>
+<org.eventb.core.axiom name="7" org.eventb.core.label="axm8" org.eventb.core.predicate="∀sw1,sw2,r·(sw1↦sw2∈doubleSwitch ∧ r↦sw1∈dom(routeSwitchPos) ∧ r↦sw2∈dom(r_otherSwitchPos)  &#13;&#10;     ⇒&#13;&#10;           routeSwitchPos(r↦sw1) = r_otherSwitchPos(r↦sw2)&#13;&#10;)"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="axm9" org.eventb.core.predicate="∀sw,r·(r↦sw∈dom(routeSwitchPos) ⇒ routeSwitchPos(r↦sw) ≠ null)"/>
+<org.eventb.core.axiom name="9" org.eventb.core.label="axm10" org.eventb.core.predicate="∀sw,r·(r↦sw∈dom(r_otherSwitchPos) ⇒ r_otherSwitchPos(r↦sw) ≠ null)"/>
+<org.eventb.core.axiom name=":" org.eventb.core.label="axm11" org.eventb.core.predicate="∀sw1,sw2·(sw1↦sw2∈doubleSwitch ⇒ sw1 ≠ sw2)"/>
+<org.eventb.core.axiom name=";" org.eventb.core.label="axm12" org.eventb.core.predicate="ran(routeSwitchPos) ⊆ {dw, fw}"/>
+<org.eventb.core.axiom name="=" org.eventb.core.label="axm13" org.eventb.core.predicate="ran(r_otherSwitchPos) ⊆ {dw, fw}"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="&gt;" org.eventb.core.identifier="condition_check_track"/>
+<org.eventb.core.axiom name="B" org.eventb.core.label="axm14" org.eventb.core.predicate="TR ∈ TRACK↔ROUTE"/>
+<org.eventb.core.axiom name="?" org.eventb.core.label="axm15" org.eventb.core.predicate="condition_check_track ∈ TR⤔(SWITCH⇸SWITCH_POS)"/>
+<org.eventb.core.axiom name="@" org.eventb.core.label="axm16" org.eventb.core.predicate="∀r,track,sw·(track↦r∈dom(condition_check_track)       ∧&#13;&#10;             sw∈dom(condition_check_track(track↦r))&#13;&#10;          ⇒ &#13;&#10;             condition_check_track(track↦r)(sw) = dw&#13;&#10;)"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="A" org.eventb.core.identifier="TR"/>
+<org.eventb.core.axiom name="C" org.eventb.core.label="axm17" org.eventb.core.predicate="∀r,track,sw·(track↦r∈dom(condition_check_track)       ∧&#13;&#10;             sw∈dom(condition_check_track(track↦r))&#13;&#10;          ⇒ &#13;&#10;             track ∉ dom(routeTrack▷{r}) ∧&#13;&#10;             sw ∉ dom(routeSwitch▷{r})   ∧ &#13;&#10;             sw ∈ dom(trackSwitch▷{track})&#13;&#10;)"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="D" org.eventb.core.identifier="over_limit_node_tracks"/>
+<org.eventb.core.axiom name="E" org.eventb.core.label="axm18" org.eventb.core.predicate="over_limit_node_tracks ∈ TRACK⤔TRACK"/>
+<org.eventb.core.axiom name="G" org.eventb.core.label="axm19" org.eventb.core.predicate="∀ track1,track2·(&#13;&#10;  track1↦track2 ∈ over_limit_node_tracks&#13;&#10;⇒&#13;&#10;  track2↦track1 ∈ over_limit_node_tracks&#13;&#10;)"/>
+<org.eventb.core.axiom name="F" org.eventb.core.label="axm20" org.eventb.core.predicate="∀r,track·(&#13;&#10;  track↦r∈dom(condition_check_track)&#13;&#10;⇔ &#13;&#10;  ∃other_track·(&#13;&#10;    other_track∈dom(routeTrack▷{r})           ∧&#13;&#10;    other_track↦track ∈ over_limit_node_tracks&#13;&#10;  )&#13;&#10;)"/>
+</org.eventb.core.contextFile>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C2"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="SWITCH"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="trackSwitch"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm1" org.eventb.core.predicate="trackSwitch ∈ SWITCH → TRACK"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm2" org.eventb.core.predicate="∀track·(track∈TRACK ∧ track_type(track) = DC&#13;&#10;   ⇒&#13;&#10;       dom(trackSwitch▷{track}) ≠ ∅&#13;&#10;)"/>
+<org.eventb.core.axiom name="/" org.eventb.core.label="axm3" org.eventb.core.predicate="∀track·(track∈TRACK ∧ track_type(track) = WC&#13;&#10;   ⇒&#13;&#10;       dom(trackSwitch▷{track}) = ∅&#13;&#10;)"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="0" org.eventb.core.identifier="doubleSwitch"/>
+<org.eventb.core.axiom name="1" org.eventb.core.label="axm4" org.eventb.core.predicate="doubleSwitch ∈ SWITCH ⤔ SWITCH"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="axm5" org.eventb.core.predicate="∀sw1,sw2·(sw1↦sw2 ∈ doubleSwitch ⇒ sw2↦sw1 ∈ doubleSwitch)"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="5" org.eventb.core.identifier="routeSwitch"/>
+<org.eventb.core.axiom name="6" org.eventb.core.label="axm7" org.eventb.core.predicate="routeSwitch ∈ SWITCH ↔ ROUTE"/>
+<org.eventb.core.axiom name="7" org.eventb.core.label="axm8" org.eventb.core.predicate="dom(routeSwitch) = SWITCH ∧ ran(routeSwitch) = ROUTE"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="axm9" org.eventb.core.predicate="∀r·(r∈ran(routeSwitch) ⇒ dom(trackSwitch▷dom(routeTrack▷{r})) = dom(routeSwitch▷{r}))"/>
+</org.eventb.core.contextFile>

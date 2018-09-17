@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="C4"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="SIGNAL"/>
+<org.eventb.core.carrierSet name=")" org.eventb.core.identifier="SIGNAL_COLOUR"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="V"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="UU"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="," org.eventb.core.identifier="USU"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="-" org.eventb.core.identifier="U"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="." org.eventb.core.identifier="H"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="/" org.eventb.core.identifier="LU"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="0" org.eventb.core.identifier="B"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="1" org.eventb.core.identifier="A"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(SIGNAL_COLOUR, {V}, {UU}, {USU}, {U}, {H}, {LU}, {B}, {A}) "/>
+<org.eventb.core.carrierSet name="3" org.eventb.core.identifier="SIGNAL_MEAN"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="4" org.eventb.core.identifier="GO"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="5" org.eventb.core.identifier="STOP"/>
+<org.eventb.core.axiom name="6" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(SIGNAL_MEAN, {GO}, {STOP})"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="7" org.eventb.core.identifier="routeSignalColour"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="axm3" org.eventb.core.predicate="routeSignalColour ∈ ROUTE → SIGNAL_COLOUR"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="9" org.eventb.core.identifier="routeSignalMean"/>
+<org.eventb.core.axiom name=":" org.eventb.core.label="axm4" org.eventb.core.predicate="routeSignalMean ∈ ROUTE → SIGNAL_MEAN"/>
+<org.eventb.core.axiom name="&gt;" org.eventb.core.label="axm5" org.eventb.core.predicate="∀r·(r∈ROUTE ∧ route_type(r)= L&#13;&#10; ⇒&#13;&#10;    routeSignalColour(r) ∈ {V, UU, USU, U, LU}   &#13;&#10;)"/>
+<org.eventb.core.axiom name="?" org.eventb.core.label="axm6" org.eventb.core.predicate="∀r·(r∈ROUTE ∧ route_type(r)= D&#13;&#10; ⇒&#13;&#10;    routeSignalColour(r) ∈ {A}   &#13;&#10;)"/>
+<org.eventb.core.axiom name="@" org.eventb.core.label="axm7" org.eventb.core.predicate="∀r·(r∈ROUTE&#13;&#10; ⇒(&#13;&#10;    (route_type(r) = L ∧ routeSignalColour(r) = H) ∨&#13;&#10;    (route_type(r) = D ∧ routeSignalColour(r) = B)&#13;&#10;      ⇔&#13;&#10;    routeSignalMean(r) = STOP&#13;&#10;   )&#13;&#10;)"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="A" org.eventb.core.identifier="signal_type"/>
+<org.eventb.core.axiom name="B" org.eventb.core.label="axm8" org.eventb.core.predicate="signal_type ∈ SIGNAL → ROUTE_TYPE"/>
+<org.eventb.core.axiom name="E" org.eventb.core.label="axm9" org.eventb.core.predicate="routeSignal ∈ ROUTE ↠ SIGNAL"/>
+<org.eventb.core.axiom name="C" org.eventb.core.label="axm10" org.eventb.core.predicate="∀r·(r∈ROUTE ⇒ route_type(r) = signal_type(routeSignal(r)))"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="D" org.eventb.core.identifier="routeSignal"/>
+<org.eventb.core.axiom name="F" org.eventb.core.label="axm11" org.eventb.core.predicate="∀r·(r∈ROUTE ⇒ routeTrackNum(r)∼(1)∈dom(routeTrack▷{r}))"/>
+</org.eventb.core.contextFile>

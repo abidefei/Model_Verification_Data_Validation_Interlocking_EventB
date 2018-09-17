@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase">
+<org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/Interlock_virtual5/C0.bcc" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.seesContext#("/>
+<org.eventb.core.scInternalContext name="C0">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="TRACK⊆SECTION" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="routeTrack∈TRACK ↔ ROUTE" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#0" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="dom(routeTrack)=TRACK∧ran(routeTrack)=ROUTE" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#3" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="∀r⦂ROUTE·finite(dom(routeTrack ▷ {r}))" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#2" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="+" org.eventb.core.label="axm5" org.eventb.core.predicate="∀r⦂ROUTE·r∈ROUTE⇒card(dom(routeTrack ▷ {r}))&gt;1" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.axiom#1" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="ROUTE" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.scCarrierSet name="SECTION" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" de.prob.units.unitPragmaAttribute="" name="TRACK" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.constant#)" org.eventb.core.type="ℙ(SECTION)"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" de.prob.units.unitPragmaAttribute="" name="routeTrack" org.eventb.core.source="/Interlock_virtual5/C0.buc|org.eventb.core.contextFile#C0|org.eventb.core.constant#4" org.eventb.core.type="ℙ(SECTION×ROUTE)"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInvariant name="C1" org.eventb.core.label="inv1" org.eventb.core.predicate="lockedRoute⊆ROUTE" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.invariant#+" org.eventb.core.theorem="false"/>
+<org.eventb.core.scVariable de.prob.units.unitPragmaAttribute="" name="lockedRoute" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.variable#*" org.eventb.core.type="ℙ(ROUTE)"/>
+<org.eventb.core.scEvent name="lockedRoutf" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#'">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="lockedRoute ≔ ∅ ⦂ ℙ(ROUTE)" org.eventb.core.label="act1" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#'|org.eventb.core.action#'"/>
+</org.eventb.core.scEvent>
+<org.eventb.core.scEvent name="lockedRoutg" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="lock_route" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#)">
+<org.eventb.core.scGuard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="r∈ROUTE" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#)|org.eventb.core.guard#(" org.eventb.core.theorem="false"/>
+<org.eventb.core.scParameter name="r" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#)|org.eventb.core.parameter#'" org.eventb.core.type="ROUTE"/>
+<org.eventb.core.scAction name="s" org.eventb.core.assignment="lockedRoute ≔ lockedRoute∪{r}" org.eventb.core.label="act1" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#)|org.eventb.core.action#)"/>
+</org.eventb.core.scEvent>
+<org.eventb.core.scEvent name="lockedRouth" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="free_route" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#,">
+<org.eventb.core.scGuard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="r∈lockedRoute" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#,|org.eventb.core.guard#(" org.eventb.core.theorem="false"/>
+<org.eventb.core.scParameter name="r" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#,|org.eventb.core.parameter#'" org.eventb.core.type="ROUTE"/>
+<org.eventb.core.scAction name="s" org.eventb.core.assignment="lockedRoute ≔ lockedRoute ∖ {r}" org.eventb.core.label="act1" org.eventb.core.source="/Interlock_virtual5/M0.bum|org.eventb.core.machineFile#M0|org.eventb.core.event#,|org.eventb.core.action#)"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="M2"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="C3"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="lockedRoute"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="." org.eventb.core.identifier="lockedTrack"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="var1" org.eventb.core.identifier="train_Pos"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="var&gt;" org.eventb.core.identifier="train_type"/>
+<org.eventb.core.event name="var?" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="lockedSwitch ≔ ∅" org.eventb.core.label="act6"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="lockedSwitch_D ≔ ∅" org.eventb.core.label="act10"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="var@" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="lock_route">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="lock_route"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="lockedSwitch ≔ lockedSwitch ∪ (routeSwitch▷{r})" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="lockedSwitch_D ≔ lockedSwitch_D ∪&#13;&#10;                 (ran(dom(trackSwitch▷dom(routeTrack▷{r}))◁doubleSwitch) × {r})" org.eventb.core.label="act7"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd16" org.eventb.core.predicate="dom(lockedSwitch) ∩ dom(trackSwitch▷dom(routeTrack▷{r})) = ∅"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="vara" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="signal_reopen">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="signal_reopen"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd6" org.eventb.core.predicate="dom(routeSwitch▷{r}) × {r} ⊆ lockedSwitch"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="free_route_QX_or_RJ">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="free_route_QX_or_RJ"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="lockedSwitch ≔ lockedSwitch⩥{r}" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="lockedSwitch_D ≔ (lockedSwitch_D ∖&#13;&#10;                     (ran(dom(trackSwitch▷dom(routeTrack▷{r}))◁doubleSwitch) × {r}))" org.eventb.core.label="act7"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varB" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="fault_route">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="fault_route"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varC" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="free_route_GZ">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="free_route_GZ"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="lockedSwitch ≔ lockedSwitch ∖ (dom(trackSwitch▷{track}) × {r})" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="lockedSwitch_D ≔ (lockedSwitch_D ∖&#13;&#10;                     (ran(dom(trackSwitch▷{track})◁doubleSwitch) × {r}))" org.eventb.core.label="act6"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varD" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_come_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_come_D"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varE" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_come_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_come_L"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varF" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_enter_station">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_enter_station"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varG" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_move_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_move_D"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="lockedSwitch ≔ lockedSwitch ∖ (dom(trackSwitch▷{track}) × {r})" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="act4" org.eventb.core.assignment="lockedSwitch_D ≔ (lockedSwitch_D ∖&#13;&#10;                     (ran(dom(trackSwitch▷{track})◁doubleSwitch) × {r}))" org.eventb.core.label="act7"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varH" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_move_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_move_L"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="lockedSwitch ≔ lockedSwitch ∖ (dom(trackSwitch▷{track}) × {r})" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="act4" org.eventb.core.assignment="lockedSwitch_D ≔ (lockedSwitch_D ∖&#13;&#10;                     (ran(dom(trackSwitch▷{track})◁doubleSwitch) × {r}))" org.eventb.core.label="act7"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varI" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_out_route_1">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_out_route_1"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="lockedSwitch ≔ lockedSwitch ∖ (dom(trackSwitch▷{track}) × {old_r})" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="act4" org.eventb.core.assignment="lockedSwitch_D ≔ (lockedSwitch_D ∖&#13;&#10;                     (ran(dom(trackSwitch▷{track})◁doubleSwitch) × {old_r}))" org.eventb.core.label="act8"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varJ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_out_route_2">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_out_route_2"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="lockedSwitch ≔ lockedSwitch ∖ (dom(trackSwitch▷{track}) × {r})" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="act4" org.eventb.core.assignment="lockedSwitch_D ≔ (lockedSwitch_D ∖&#13;&#10;                     (ran(dom(trackSwitch▷{track})◁doubleSwitch) × {r}))" org.eventb.core.label="act7"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varK" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_leave_D">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_leave_D"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="varL" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="train_leave_L">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="train_leave_L"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="varM" org.eventb.core.label="inv1" org.eventb.core.predicate="∀train1,train2,track·(&#13;&#10;   (track ∈ TRACK ∧&#13;&#10;    train1↦track ∈ train_Pos ∧&#13;&#10;    train2↦track ∈ train_Pos ∧&#13;&#10;             train1 ≠ train2 )&#13;&#10;  ⇒&#13;&#10;             track_type(track) ∈ {WC, GD}&#13;&#10;)"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="varN" org.eventb.core.identifier="lockedSwitch"/>
+<org.eventb.core.invariant name="varO" org.eventb.core.label="inv2" org.eventb.core.predicate="lockedSwitch ∈ SWITCH ⇸ ROUTE"/>
+<org.eventb.core.invariant name="varP" org.eventb.core.label="inv5" org.eventb.core.predicate="∀track,r·(r∈ROUTE ∧ track∈dom(routeTrack▷{r}) ∧ track∈ran(trackSwitch) ⇒&#13;&#10;       (track↦r∈lockedTrack&#13;&#10;  ⇒&#13;&#10;       dom(trackSwitch▷{track}) × {r} ⊆ lockedSwitch)&#13;&#10;)"/>
+<org.eventb.core.invariant name="varZ" org.eventb.core.label="inv7" org.eventb.core.predicate="∀r·(r∈lockedRoute ⇒ dom(routeSwitch▷{r}) × {r} ⊆ lockedSwitch)"/>
+<org.eventb.core.invariant name="var`" org.eventb.core.label="inv10" org.eventb.core.predicate="lockedSwitch_D ∈ SWITCH ↔ ROUTE"/>
+<org.eventb.core.invariant name="var[" org.eventb.core.label="inv12" org.eventb.core.predicate="∀sw,r·(sw ↦ r ∈ lockedSwitch &#13;&#10;⇒&#13;&#10;   ran({sw}◁doubleSwitch) × {r} ⊆ lockedSwitch_D&#13;&#10;)"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="var_" org.eventb.core.identifier="lockedSwitch_D"/>
+</org.eventb.core.machineFile>
